@@ -15,5 +15,39 @@
     "preview": {},
     "last_modified": "2022-09-15T22:39:59-04:00",
     "input_file": "building-my-1st-shinyapp.knit.md"
+  },
+  {
+    "path": "posts/2022-09-14-building-my-2nd-shinyapp/",
+    "title": "Building my 2nd ShinyApp",
+    "description": "This was my second experience building a ShinyApp.",
+    "author": [
+      {
+        "name": "Unknown",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-14",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-15T22:40:29-04:00",
+    "input_file": "building-my-2nd-shinyapp.knit.md"
+  },
+  {
+    "path": "posts/2022-09-14-building-my-3rd-shinyapp/",
+    "title": "Building my 3rd ShinyApp",
+    "description": "This was my third experience building a ShinyApp.",
+    "author": [
+      {
+        "name": "Unknown",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-14",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-15T22:40:51-04:00",
+    "input_file": "building-my-3rd-shinyapp.knit.md"
   }
 ]
