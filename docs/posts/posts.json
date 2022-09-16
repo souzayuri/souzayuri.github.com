@@ -2,19 +2,19 @@
   {
     "path": "posts/2022-09-14-building-my-1st-shinyapp/",
     "title": "Building my 1st ShinyApp",
-    "description": "This was my first experience building a ShinyApp.",
+    "description": "This was my [first experience](https://souzayuri.shinyapps.io/biota/) building a ShinyApp.",
     "author": [
       {
-        "name": "Unknown",
+        "name": "Yuri Souza",
         "url": {}
       }
     ],
     "date": "2022-09-14",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-15T22:39:59-04:00",
-    "input_file": "building-my-1st-shinyapp.knit.md"
+    "last_modified": "2022-09-15T23:24:32-04:00",
+    "input_file": {}
   },
   {
     "path": "posts/2022-09-14-building-my-2nd-shinyapp/",
@@ -30,24 +30,24 @@
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-15T22:40:29-04:00",
-    "input_file": "building-my-2nd-shinyapp.knit.md"
+    "last_modified": "2022-09-15T22:40:30-04:00",
+    "input_file": {}
   },
   {
     "path": "posts/2022-09-14-building-my-3rd-shinyapp/",
-    "title": "Building my 3rd ShinyApp",
-    "description": "This was my third experience building a ShinyApp.",
+    "title": "Building my 3st ShinyApp",
+    "description": "This was my [third experience](https://souzayuri.shinyapps.io/reseedproject/) building a ShinyApp.",
     "author": [
       {
-        "name": "Unknown",
+        "name": "Yuri Souza",
         "url": {}
       }
     ],
     "date": "2022-09-14",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-15T22:40:51-04:00",
-    "input_file": "building-my-3rd-shinyapp.knit.md"
+    "last_modified": "2022-09-15T23:24:43-04:00",
+    "input_file": {}
   }
 ]
