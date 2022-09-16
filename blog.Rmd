@@ -1,7 +1,8 @@
 ---
-title: "About this site"
+title: "About this blog"
 description: |
-  Some additional details about the website
+  Work in progress
+listing: posts 
 ---
 
 ```{r setup, include=FALSE}

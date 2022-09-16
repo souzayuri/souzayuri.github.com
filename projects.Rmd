@@ -1,7 +1,7 @@
 ---
-title: "About this site"
+title: "About my projects"
 description: |
-  Some additional details about the website
+  Work in progress
 ---
 
 ```{r setup, include=FALSE}

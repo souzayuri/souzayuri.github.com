@@ -1,18 +1,30 @@
 ---
 title: "Yuri Souza"
-description: |
-  Welcome to the website. I hope you enjoy it!
+image: "data/images/YuriSSouza.jpg"
+#links:
+#  - label: Researchgate
+#    url: "https://www.researchgate.net/profile/Yuri-Souza-6"
+#  - label: Google Citations   
+#    url: "https://scholar.google.com/citations?user=s1YL0toAAAAJ"
+#  - label: GitHub
+#    url: "https://github.com/souzayuri"
+#  - label: Twitter
+#    url: "https://twitter.com/Yuri_S_Souza"
+#  - label: Instagram
+#    url: "https://www.instagram.com/ssouzayuri/"
+#  - label: Email
+#    url: "mailto:yuri.souza@miami.edu"
+output:
+  postcards::jolla
+
 site: distill::distill_website
+
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+I am an Ecologist fascinated by how the environment and its organisms relate to each other to keep the world as we know moving. Besides Ecology, I also spend a lot of time reading and searching about technology, computing, and Data Science. This last one was something that grew on me in the past years, so I am trying to connect its techniques and tools with Ecology studies. During my free time, I like hanging out with people to have beers and talk about books, tv series, games, and sci-fi. Fun (nerd) fact about me: I love the Middle Earth histories, the Magic The Gathering card game, and skateboarding.
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
 
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+<img src="data/images/generatedtext.jpg" alt="isolated" width="565">
 
-```
 
+"*Le nathlam hí, pedo mellon a minno*"

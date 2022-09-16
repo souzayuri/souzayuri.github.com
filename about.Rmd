@@ -1,7 +1,14 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  Work in progress
+
+author:
+  - name: Yuri Silva de Souza
+    affiliation: University of Miami
+    affiliation_url: https://biology.as.miami.edu/people/graduate-students/index.html
+date: "`r Sys.Date()`"
+
 ---
 
 ```{r setup, include=FALSE}
