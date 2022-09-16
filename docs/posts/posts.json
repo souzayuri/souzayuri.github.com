@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "path": "posts/2022-09-14-building-my-1st-shinyapp/",
+    "title": "Building my 1st ShinyApp",
+    "description": "This was my first experience building a ShinyApp.",
+    "author": [
+      {
+        "name": "Unknown",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-14",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-15T22:39:59-04:00",
+    "input_file": "building-my-1st-shinyapp.knit.md"
+  }
+]

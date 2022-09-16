@@ -1,0 +1,17 @@
+---
+title: "Building my 1st ShinyApp"
+description: |
+  This was my first experience building a ShinyApp.
+author:
+  - name: Unknown
+date: 2022-09-14
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
