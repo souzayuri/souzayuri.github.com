@@ -33,6 +33,6 @@ navbar:
     - text: "Contact"
       href: contact.html
     - text: "CV"
-      href: data/pdfs/YuriSouza_CV_2022.pdf
+      href: https://github.com/souzayuri/cv/raw/main/cv-yuri-souza-en-academic-complete.pdf
       
 output: distill::distill_article
