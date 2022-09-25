@@ -12,7 +12,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-24T16:41:28-04:00"
+      "last_modified": "2022-09-24T21:31:49-04:00"
     },
     {
       "path": "blog.html",
@@ -20,7 +20,7 @@
       "description": "Work in progress\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-24T16:41:29-04:00"
+      "last_modified": "2022-09-24T21:31:50-04:00"
     },
     {
       "path": "contact.html",
@@ -28,21 +28,21 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-24T16:41:30-04:00"
+      "last_modified": "2022-09-24T21:31:50-04:00"
     },
     {
       "path": "cv.html",
       "title": "CV",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-24T16:41:31-04:00"
+      "last_modified": "2022-09-24T21:31:51-04:00"
     },
     {
       "path": "index.html",
       "title": "Yuri Souza",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          Yuri Souza, Ph.D. student\r\n          Home\r\n          About\r\n          Projects\r\n          Blog\r\n          Research\r\n          Contact\r\n          CV\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Yuri Souza\r\n          \r\n          \r\n            \r\n              I am an Ecologist fascinated by how the environment and\r\n              its organisms relate to each other to keep the world as we\r\n              know moving. Besides Ecology, I also spend a lot of time\r\n              reading and searching about technology, computing, and\r\n              Data Science. This last one was something that grew on me\r\n              in the past years, so I am trying to connect its\r\n              techniques and tools with Ecology studies. During my free\r\n              time, I like hanging out with people to have beers and\r\n              talk about books, tv series, games, and sci-fi. Fun (nerd)\r\n              fact about me: I love the Middle Earth histories and the\r\n              MTG card game.\r\n              \r\n              “Le nathlam hí, pedo mellon a minno”\r\n            \r\n            \r\n              I am an Ecologist fascinated by how the environment and\r\n              its organisms relate to each other to keep the world as we\r\n              know moving. Besides Ecology, I also spend a lot of time\r\n              reading and searching about technology, computing, and\r\n              Data Science. This last one was something that grew on me\r\n              in the past years, so I am trying to connect its\r\n              techniques and tools with Ecology studies. During my free\r\n              time, I like hanging out with people to have beers and\r\n              talk about books, tv series, games, and sci-fi. Fun (nerd)\r\n              fact about me: I love the Middle Earth histories and the\r\n              MTG card game.\r\n              \r\n              “Le nathlam hí, pedo mellon a minno”\r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2022-09-24T16:41:32-04:00"
+      "last_modified": "2022-09-24T21:31:51-04:00"
     },
     {
       "path": "projects.html",
@@ -50,7 +50,7 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-24T16:41:33-04:00"
+      "last_modified": "2022-09-24T21:31:51-04:00"
     },
     {
       "path": "research.html",
@@ -58,7 +58,7 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-24T16:41:34-04:00"
+      "last_modified": "2022-09-24T21:31:52-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

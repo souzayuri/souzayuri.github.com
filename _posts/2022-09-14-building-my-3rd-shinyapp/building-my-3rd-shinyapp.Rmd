@@ -1,5 +1,5 @@
 ---
-title: "Building my 3st ShinyApp"
+title: "Building my 3rd ShinyApp"
 description: |
   This was my third experience building a ShinyApp.
 author:
@@ -16,4 +16,4 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 <iframe src="https://souzayuri.shinyapps.io/reseedproject/"
-        style="border: 2px solid black; width: 150%; height: 500px;"></iframe>
+        style="border: 2px solid black; width: 170%; height: 500px;"></iframe>

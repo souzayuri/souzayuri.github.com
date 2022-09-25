@@ -2,7 +2,24 @@
   {
     "path": "posts/2022-09-14-building-my-1st-shinyapp/",
     "title": "Building my 1st ShinyApp",
-    "description": "This was my first experience building a ShinyApp.",
+    "description": "This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master's.",
+    "author": [
+      {
+        "name": "Yuri Souza",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-24",
+    "categories": [],
+    "contents": "\r\nDuring my master’s, I had the idea to make the data I used public and\r\neasily accessible to everyone. So, I found the ShinyApp structure. Since I was\r\nalready working and familiar with the R language, I thought it would be\r\ngood to use its package to share my data.\r\nThe idea was to create an interactive app with a website layout in\r\nwhich the user could see the details of the project as exploring the\r\ndata information.\r\nThe project tries to understand the impact of the vertebrates’\r\nDefaunation in the Brazilian Atlantic forest. That is why we called it\r\nBEFAU-Biota.\r\nHere the user can scroll through the app and check the information about\r\nthe sampled areas, camera trap videos, fieldwork, and scientific\r\npublications, and interact with the data using a linear model.\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-24T21:29:23-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2022-09-14-building-my-2nd-shinyapp/",
+    "title": "Building my 2nd ShinyApp",
+    "description": "My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.",
     "author": [
       {
         "name": "Yuri Souza",
@@ -11,31 +28,14 @@
     ],
     "date": "2022-09-14",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n",
+    "contents": "\r\nThis app was the most challenging experience I ever had with R and\r\nprogramming (Not that I have been programming a lot). The final result\r\nwas very useful and pleasurable because I learned a lot. But first, let\r\nme tell you about the motivation for this App.\r\nI worked with a group led by Dr. Marina\r\nCortês. This group collected data from fieldwork and\r\nliterature, with people collaborating from different places in the\r\nworld. The data consist of plant attributes/traits. One of the\r\nchallenges of this kind of work is keeping the data structure since\r\ndifferent places use dots and commas differently. You probably have\r\nexperienced opening an Excel table, and the data was like a mess with\r\nsmall numbers or coordinates represented as it was money information.\r\nThis group was facing this problem. So, there was a need for a platform\r\nthat could receive and integrate the data without any problem with data\r\nformatting.\r\nThe way we found to solve this issue was by creating a CRUD\r\n(Create, Read, Update, Delete) app. The idea was to create a platform\r\nwith tabs and options in which the user does not need to write, they\r\njust need to select, then decrease problems such as word formatting or\r\nnumber punctuation. However, these data needed to be stored in some\r\ndatabase with real updating to avoid data overlapping or input\r\nduplication, and here my problem starts.\r\nI started the app using the Tychobra\r\ntutorial. I chose this one because 1) it was the only example available\r\non the internet, and 2) it has an option for login, which allowed only\r\ngive access to those people who were working with input data. This login\r\noption also allowed me to track the person who entered the data, making\r\nit possible to ask them about some mistakes or details on the data.\r\nHowever, this tutorial uses the SQLite database structure, which hosts\r\nthe data locally and uses SQL structure, something I have never heard of\r\nbefore. So, to solve it, I needed to find a SQL structure that stores\r\nthe data remotely, and I found my answer in the MySQL method through\r\nthis tutorial.\r\nAt this point, I had answered two questions about my project: 1-\r\nwhich app structure I should use, and 2- where to store data. However, I\r\nfigured it would take something necessary to intermediate the\r\ninformation exchange, and then I had to learn about servers. I needed to\r\nfind a way to connect my table in MySQL to the app visual structure on\r\nR. I found my answer on Amazon\r\nAWS.\r\nUnfortunately, Amazon AWS is a paid server. Fortunately, it gives you\r\n1-years of free tests. The app I show here is not on AWS anymore because\r\nmy license expired. However, you can find it on my YouTube channel and\r\ncheck what the final version looks like.\r\nThe version I present here (https://souzayuri.shinyapps.io/CRUD_app/) is the one\r\nbefore I used MySQL and can give you some insights into this powerful\r\ndata-collection tool and its potential to facilitate team\r\ncollaborations.\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-15T23:28:59-04:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/2022-09-14-building-my-2nd-shinyapp/",
-    "title": "Building my 2nd ShinyApp",
-    "description": "This was my second experience building a ShinyApp.",
-    "author": [
-      {
-        "name": "Unknown",
-        "url": {}
-      }
-    ],
-    "date": "2022-09-14",
-    "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2022-09-15T22:40:30-04:00",
+    "last_modified": "2022-09-24T21:18:00-04:00",
     "input_file": {}
   },
   {
     "path": "posts/2022-09-14-building-my-3rd-shinyapp/",
-    "title": "Building my 3st ShinyApp",
+    "title": "Building my 3rd ShinyApp",
     "description": "This was my third experience building a ShinyApp.",
     "author": [
       {
@@ -47,7 +47,7 @@
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-15T23:28:38-04:00",
+    "last_modified": "2022-09-24T21:27:17-04:00",
     "input_file": {}
   }
 ]

@@ -1,19 +1,31 @@
 ---
 title: "Building my 2nd ShinyApp"
 description: |
-  This was my second experience building a ShinyApp.
+  My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.
 author:
-  - name: Unknown
-    url: {}
-date: 2022-09-14
+  - name: Yuri Souza
+date: 2022-09-24
 output:
   distill::distill_article:
     self_contained: false
 ---
+This app was the most challenging experience I ever had with R and programming (Not that I have been programming a lot). The final result was very useful and pleasurable because I learned a lot. But first, let me tell you about the motivation for this App. 
 
+I worked with a group led by Dr. [*Marina Cortês*](https://marinaccortes.wixsite.com/marina). This group collected data from fieldwork and literature, with people collaborating from different places in the world. The data consist of plant attributes/traits. One of the challenges of this kind of work is keeping the data structure since different places use dots and commas differently. You probably have experienced opening an Excel table, and the data was like a mess with small numbers or coordinates represented as it was money information. This group was facing this problem. So, there was a need for a platform that could receive and integrate the data without any problem with data formatting. 
+
+The way we found to solve this issue was by creating a [*CRUD*](https://www.codecademy.com/article/what-is-crud) (Create, Read, Update, Delete) app. The idea was to create a platform with tabs and options in which the user does not need to write, they just need to select, then decrease problems such as word formatting or number punctuation. However, these data needed to be stored in some database with real updating to avoid data overlapping or input duplication, and here my problem starts. 
+
+I started the app using the [Tychobra](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/) tutorial. I chose this one because 1) it was the only example available on the internet, and 2) it has an option for login, which allowed only give access to those people who were working with input data. This login option also allowed me to track the person who entered the data, making it possible to ask them about some mistakes or details on the data. However, this tutorial uses the SQLite database structure, which hosts the data locally and uses SQL structure, something I have never heard of before. So, to solve it, I needed to find a SQL structure that stores the data remotely, and I found my answer in the MySQL method through this [tutorial](https://shiny.rstudio.com/articles/persistent-data-storage.html). 
+
+At this point, I had answered two questions about my project: 1- which app structure I should use, and 2- where to store data. However, I figured it would take something necessary to intermediate the information exchange, and then I had to learn about servers. I needed to find a way to connect my table in MySQL to the app visual structure on R. I found my answer on [*Amazon AWS*](https://aws.amazon.com/).  
+
+Unfortunately, Amazon AWS is a paid server. Fortunately, it gives you 1-years of free tests. The app I show here is not on AWS anymore because my license expired. However, you can find it on my [*YouTube channel*](https://youtu.be/jIEttyrSTbE) and check what the final version looks like. 
+
+The version I present here (https://souzayuri.shinyapps.io/CRUD_app/) is the one before I used MySQL and can give you some insights into this powerful data-collection tool and its potential to facilitate team collaborations. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
+<iframe src="https://souzayuri.shinyapps.io/CRUD_app/"
+        style="border: 2px solid black; width: 120%; height: 500px;"></iframe>
