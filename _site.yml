@@ -1,4 +1,4 @@
-name: "."
+name: "yuri_souza"
 title: "Yuri Souza, Ph.D. student"
 description: |
   Yuri Souza
@@ -20,7 +20,7 @@ navbar:
     - icon: fa-duotone fa-envelope fa-2x
       href: "mailto:yuri.souza@miami.edu"
   left:
-    - text: "Home" 
+    - text: ""
       href: index.html
     - text: "About"
       href: about.html
@@ -34,5 +34,16 @@ navbar:
       href: contact.html
     - text: "CV"
       href: https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf
-      
+base_url: https://github.com/souzayuri/souzayuri.github.com
+collections:
+  posts:
+    creative_commons: CC BY
+    disqus: yuri_souza
+    share: [twitter]
+
 output: distill::distill_article
+rss:
+  full_content: TRUE
+  categories:
+    - R
+    - ShinyApp

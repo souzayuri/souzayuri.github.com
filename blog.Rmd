@@ -1,8 +1,11 @@
 ---
-title: "About this blog"
-description: |
-  Work in progress
-listing: posts 
+title: "Posts gallery"
+listing:
+  posts:
+    - 2022-09-14-building-my-3rd-shinyapp
+    - 2022-09-14-building-my-2nd-shinyapp
+    - 2022-09-14-building-my-1st-shinyapp
+
 ---
 
 ```{r setup, include=FALSE}

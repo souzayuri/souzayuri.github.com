@@ -2,12 +2,16 @@
 title: "Building my 2nd ShinyApp"
 description: |
   My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.
+categories:
+  - ShinyApp 
 author:
   - name: Yuri Souza
 date: 2022-09-24
+preview: crud.jpg
 output:
   distill::distill_article:
     self_contained: false
+    
 ---
 This app was the most challenging experience I ever had with R and programming (Not that I have been programming a lot). The final result was very useful and pleasurable because I learned a lot. But first, let me tell you about the motivation for this App. 
 

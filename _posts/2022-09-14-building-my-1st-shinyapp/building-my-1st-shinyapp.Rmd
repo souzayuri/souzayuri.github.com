@@ -2,12 +2,16 @@
 title: "Building my 1st ShinyApp"
 description: |
   This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master's.
+categories:
+  - ShinyApp 
 author:
   - name: Yuri Souza
 date: 2022-09-24
+preview: defau.jpg
 output:
   distill::distill_article:
     self_contained: false
+
 ---
 During my master's, I had the idea to make the data I used public and easily accessible to everyone. So, I found the [ShinyApp](https://shiny.rstudio.com/) structure. Since I was already working and familiar with the R language, I thought it would be good to use its package to share my data. 
 
