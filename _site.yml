@@ -15,8 +15,8 @@ navbar:
       href: https://github.com/souzayuri
     - icon: fa fa-twitter fa-lg fa-2x
       href: https://twitter.com/Yuri_S_Souza
-    - icon: fa fa-brands fa-instagram fa-2x
-      href: https://www.instagram.com/ssouzayuri/
+#    - icon: fa fa-brands fa-instagram fa-2x
+#      href: https://www.instagram.com/ssouzayuri/
     - icon: fa-duotone fa-envelope fa-2x
       href: "mailto:yuri.souza@miami.edu"
   left:
