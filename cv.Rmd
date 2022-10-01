@@ -8,8 +8,19 @@ library(fontawesome)
 ```
 
 
-###  `r fa("scroll", fill = "#244968")` [Professional](https://github.com/souzayuri/cv/blob/1df68a54abc8d9b7e14bd78474ff2781fe325687/cv-yuri-souza.pdf)  
 
-### `r fa("scroll", fill = "#397298")` [Academic](https://github.com/souzayuri/cv/blob/1df68a54abc8d9b7e14bd78474ff2781fe325687/YuriSSouza_cv_09-29-2022.pdf)  
- 
+
+###  `r fa("scroll", fill = "#244968")` [Professional](https://github.com/souzayuri/cv/raw/1df68a54abc8d9b7e14bd78474ff2781fe325687/cv-yuri-souza.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
+
+`r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf) to access it on my `r fa("github", fill = "#244968")` 
+
+.        
+.        
+.           
+.  
+
+###  `r fa("scroll", fill = "#397298")` [Academic](https://github.com/souzayuri/cv/raw/1df68a54abc8d9b7e14bd78474ff2781fe325687/YuriSSouza_cv_09-29-2022.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
+
+`r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/YuriSSouza_cv_09-21-2022.pdf) to access it on my `r fa("github", fill = "#244968")` 
+
  
