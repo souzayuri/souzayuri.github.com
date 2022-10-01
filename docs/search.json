@@ -11,14 +11,14 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\n\r\nWhat I do\r\nFrom t-tests to deep learning, I’ve covered a lot of ground in\r\nmodeling, visualizing, and understanding data. I can provide inference\r\nfor models on millions of observations, classify biomedical images to\r\ndetermine pathology, and scrape the web to explore political sentiment.\r\nWhat’s more, I can help others understand the results and take\r\nappropriate action regarding them.\r\nAnalytically speaking, I have a fairly wide exposure to modeling\r\ntechniques, from traditional models to their extensions in clustered,\r\ntemporal, spatial and nonlinear contexts. I have employed latent\r\nvariable models, machine learning techniques, Bayesian approaches, dealt\r\nwith unstructured data (e.g. text analysis), and more. Moreover, I have\r\ntaught, written about, or conducted workshops on these topics, helping\r\nothers gain expertise to become self-sufficient in their own\r\nefforts.\r\nI spend most of my programming time in the R world, with\r\nwhich I have many years of experience using it as my primary programming\r\ntool. I have written countless lines of code to extract information,\r\nexamine complex relationships, and visualize everything from the mundane\r\nto the abstract.\r\nI spend the bulk of my other efforts in coding with Python, where I’ve\r\nused it for general machine learning models, natural language\r\nprocessing, and other endeavors. I also have to consistently dive into\r\nother programming as necessary, such as for web development and report\r\ngeneration. I like programming in general and solving problems with it,\r\nand I’m lucky enough to spend regular time simply learning new modeling\r\nand programming tricks.\r\nPersonal\r\nDisplaced Texan… one-time psychologist/philosopher… aesthetically\r\nleans toward De Stijl, Barthelme, Ashbery, and synthwave… has been known\r\nto grow things like dahlias, okra, and exquisitely hot peppers… enjoys\r\nwalking, running, biking… sometimes knows what he’s talking about…\r\nAcademic Background\r\n While my interest is in data science\r\ngenerally, I started off majoring in psychology and philosophy as an undergraduate, and\r\neventually obtained a Ph.D. in Experimental Psychology. During\r\ngraduate school, I became interested in statistics for practical\r\nreasons, eventually choosing it as a concentration, and I also started\r\nconsulting at that time. That turned out to be a good fit for me, and\r\nI’ve been exploring and analyzing data ever since. \r\nPresent\r\n Currently I am a Senior Machine Learning Scientist for Strong\r\nAnalytics, where I provide analytical insights and\r\nprogramming expertise to enable clients from a variety of industries\r\nmeet their goals. \r\n Previously, I was a lead statistician\r\nfor CSCAR at the\r\nUniversity of Michigan, and before that, I was a statistical consultant\r\nwith the Center for Social Science Research at the\r\nUniversity of Notre Dame. In both settings I provided analytical,\r\nvisualization, programming, conceptual, and other support to the larger\r\nresearch community. \r\n\r\nI am passionate about doing quality work that answers the questions\r\nat hand. What drew me to the world of data science and keeps my interest\r\nis that it frees me to engage in whatever science I like, and provides a\r\ngreat many tools with which to discover more about the things we humans\r\nare most interested in. CV can be found here.\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-30T21:47:56-04:00"
+      "last_modified": "2022-09-30T21:50:55-04:00"
     },
     {
       "path": "blog.html",
       "title": "Posts gallery",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-30T21:47:57-04:00"
+      "last_modified": "2022-09-30T21:50:55-04:00"
     },
     {
       "path": "contact.html",
@@ -26,21 +26,21 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-30T21:47:58-04:00"
+      "last_modified": "2022-09-30T21:50:56-04:00"
     },
     {
       "path": "cv.html",
       "title": "CV",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-30T21:47:59-04:00"
+      "last_modified": "2022-09-30T21:50:57-04:00"
     },
     {
       "path": "index.html",
       "title": "Yuri Souza",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          Yuri Souza, Ph.D. student\r\n          \r\n          About\r\n          Projects\r\n          Blog\r\n          Research\r\n          Contact\r\n          CV\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Yuri Souza\r\n          \r\n          \r\n            \r\n              I am an Ecologist fascinated by how the environment and\r\n              its organisms relate to each other to keep the world as we\r\n              know moving. Besides Ecology, I also spend a lot of time\r\n              reading and searching about technology, computing, and\r\n              Data Science. This last one was something that grew on me\r\n              in the past years, so I am trying to connect its\r\n              techniques and tools with Ecology studies. During my free\r\n              time, I like hanging out with people to have beers and\r\n              talk about books, tv series, games, and sci-fi. Fun (nerd)\r\n              fact about me: I love the Middle Earth histories and the\r\n              MTG card game.\r\n              \r\n              “Le nathlam hí, pedo mellon a minno”\r\n            \r\n            \r\n              I am an Ecologist fascinated by how the environment and\r\n              its organisms relate to each other to keep the world as we\r\n              know moving. Besides Ecology, I also spend a lot of time\r\n              reading and searching about technology, computing, and\r\n              Data Science. This last one was something that grew on me\r\n              in the past years, so I am trying to connect its\r\n              techniques and tools with Ecology studies. During my free\r\n              time, I like hanging out with people to have beers and\r\n              talk about books, tv series, games, and sci-fi. Fun (nerd)\r\n              fact about me: I love the Middle Earth histories and the\r\n              MTG card game.\r\n              \r\n              “Le nathlam hí, pedo mellon a minno”\r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2022-09-30T21:47:59-04:00"
+      "last_modified": "2022-09-30T21:50:57-04:00"
     },
     {
       "path": "projects.html",
@@ -48,7 +48,7 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-30T21:48:00-04:00"
+      "last_modified": "2022-09-30T21:50:57-04:00"
     },
     {
       "path": "research.html",
@@ -56,7 +56,7 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-09-30T21:48:00-04:00"
+      "last_modified": "2022-09-30T21:50:58-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
