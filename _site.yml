@@ -34,16 +34,22 @@ navbar:
       href: contact.html
     - text: "CV"
       href: https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf
-base_url: https://github.com/souzayuri/souzayuri.github.com
+base_url: https://souzayuri.github.io/
 collections:
   posts:
     creative_commons: CC BY
-    disqus: yuri_souza
+#    disqus: yuri_souza
     share: [twitter]
 
-output: distill::distill_article
+output:
+  distill::distill_article:
+    includes:
+      in_header: utterances.html
+twitter:
+  site: "@Yuri_S_Souza"
+  creator: "@Yuri_S_Souza"
 rss:
   full_content: TRUE
-  categories:
-    - R
-    - ShinyApp
+#  categories:
+#    - R
+#    - ShinyApp

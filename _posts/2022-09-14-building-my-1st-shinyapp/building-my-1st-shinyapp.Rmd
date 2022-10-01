@@ -3,7 +3,8 @@ title: "Building my 1st ShinyApp"
 description: |
   This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master's.
 categories:
-  - ShinyApp 
+  - ShinyApp
+  - databases 
 author:
   - name: Yuri Souza
 date: 2022-09-24

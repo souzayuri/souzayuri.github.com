@@ -105,6 +105,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Yuri Souza, Ph.D. student: About my projects"/>
   <meta property="twitter:description" content="Work in progress"/>
+  <meta property="twitter:site" content="@Yuri_S_Souza"/>
+  <meta property="twitter:creator" content="@Yuri_S_Souza"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -2077,6 +2079,43 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!/posts/.test(location.pathname)) {
+        return;
+      }
+
+      var script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.setAttribute("repo", "souzayuri/souzayuri.github.com");
+      script.setAttribute("issue-term", "title");
+      script.setAttribute("crossorigin", "anonymous");
+      script.setAttribute("label", "comments 💬");
+      script.setAttribute("theme", "github-light");
+
+      /* wait for article to load, append script to article element */
+      var observer = new MutationObserver(function (mutations, observer) {
+        var article = document.querySelector("d-article");
+        if (article) {
+          observer.disconnect();
+          /* HACK: article scroll */
+          article.setAttribute("style", "overflow-y: hidden");
+          article.appendChild(script);
+        }
+      });
+
+      observer.observe(document.body, { childList: true });
+    });
+  </script>
+
+  <!-- <script src="https://utteranc.es/client.js" -->
+  <!--         repo="sciencificity/Blog_Vebash" -->
+  <!--         issue-term="title" -->
+  <!--         label="comments 💬" -->
+  <!--         theme="github-light" -->
+  <!--         crossorigin="anonymous" -->
+  <!--         async> -->
+  <!-- </script> -->
   <!--/radix_placeholder_site_in_header-->
 
 

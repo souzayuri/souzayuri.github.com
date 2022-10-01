@@ -102,6 +102,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Yuri Souza, Ph.D. student: Posts gallery"/>
+  <meta property="twitter:site" content="@Yuri_S_Souza"/>
+  <meta property="twitter:creator" content="@Yuri_S_Souza"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -2074,6 +2076,43 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!/posts/.test(location.pathname)) {
+        return;
+      }
+
+      var script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.setAttribute("repo", "souzayuri/souzayuri.github.com");
+      script.setAttribute("issue-term", "title");
+      script.setAttribute("crossorigin", "anonymous");
+      script.setAttribute("label", "comments 💬");
+      script.setAttribute("theme", "github-light");
+
+      /* wait for article to load, append script to article element */
+      var observer = new MutationObserver(function (mutations, observer) {
+        var article = document.querySelector("d-article");
+        if (article) {
+          observer.disconnect();
+          /* HACK: article scroll */
+          article.setAttribute("style", "overflow-y: hidden");
+          article.appendChild(script);
+        }
+      });
+
+      observer.observe(document.body, { childList: true });
+    });
+  </script>
+
+  <!-- <script src="https://utteranc.es/client.js" -->
+  <!--         repo="sciencificity/Blog_Vebash" -->
+  <!--         issue-term="title" -->
+  <!--         label="comments 💬" -->
+  <!--         theme="github-light" -->
+  <!--         crossorigin="anonymous" -->
+  <!--         async> -->
+  <!-- </script> -->
   <!--/radix_placeholder_site_in_header-->
 
 
@@ -2262,7 +2301,7 @@ function init_posts_list() {
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Posts gallery">Posts gallery</h1>
 <a href="posts/2022-09-14-building-my-3rd-shinyapp/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["ShinyApp"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["ShinyApp","databases"]}</script>
 <div class="metadata">
 <div class="publishedDate">Sept. 14, 2022</div>
 <div class="dt-authors">
@@ -2276,12 +2315,13 @@ function init_posts_list() {
 <h2>Building my 3rd ShinyApp</h2>
 <div class="dt-tags">
 <div class="dt-tag">ShinyApp</div>
+<div class="dt-tag">databases</div>
 </div>
 <p>This was my third experience building a ShinyApp.</p>
 </div>
 </a>
 <a href="posts/2022-09-14-building-my-2nd-shinyapp/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["ShinyApp"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["ShinyApp","SQL","databases"]}</script>
 <div class="metadata">
 <div class="publishedDate">Sept. 24, 2022</div>
 <div class="dt-authors">
@@ -2295,12 +2335,14 @@ function init_posts_list() {
 <h2>Building my 2nd ShinyApp</h2>
 <div class="dt-tags">
 <div class="dt-tag">ShinyApp</div>
+<div class="dt-tag">SQL</div>
+<div class="dt-tag">databases</div>
 </div>
 <p>My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.</p>
 </div>
 </a>
 <a href="posts/2022-09-14-building-my-1st-shinyapp/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["ShinyApp"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["ShinyApp","databases"]}</script>
 <div class="metadata">
 <div class="publishedDate">Sept. 24, 2022</div>
 <div class="dt-authors">
@@ -2314,6 +2356,7 @@ function init_posts_list() {
 <h2>Building my 1st ShinyApp</h2>
 <div class="dt-tags">
 <div class="dt-tag">ShinyApp</div>
+<div class="dt-tag">databases</div>
 </div>
 <p>This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master's.</p>
 </div>
@@ -2328,8 +2371,16 @@ function init_posts_list() {
 <span class="category-count">(3)</span>
 </li>
 <li>
+<a href="#category:databases">databases</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
 <a href="#category:ShinyApp">ShinyApp</a>
 <span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:SQL">SQL</a>
+<span class="category-count">(1)</span>
 </li>
 </ul>
 </div>

@@ -4,6 +4,7 @@ description: |
   This was my third experience building a ShinyApp.
 categories:
   - ShinyApp 
+  - databases
 author:
   - name: Yuri Souza
 date: 2022-09-14

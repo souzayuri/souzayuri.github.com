@@ -4,6 +4,8 @@ description: |
   My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.
 categories:
   - ShinyApp 
+  - SQL
+  - databases
 author:
   - name: Yuri Souza
 date: 2022-09-24
