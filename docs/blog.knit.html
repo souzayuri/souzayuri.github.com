@@ -88,20 +88,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Yuri Souza, Ph.D. student: Curriculum Vitae</title>
+  <title>Yuri Souza, Ph.D. student: Posts gallery</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Yuri Souza, Ph.D. student: Curriculum Vitae"/>
+  <meta property="og:title" content="Yuri Souza, Ph.D. student: Posts gallery"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Yuri Souza, Ph.D. student"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Yuri Souza, Ph.D. student: Curriculum Vitae"/>
+  <meta property="twitter:title" content="Yuri Souza, Ph.D. student: Posts gallery"/>
   <meta property="twitter:site" content="@Yuri_S_Souza"/>
   <meta property="twitter:creator" content="@Yuri_S_Souza"/>
 
@@ -109,7 +109,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Curriculum Vitae"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Posts gallery"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"character","attributes":{},"value":["2022-09-14-building-my-3rd-shinyapp","2022-09-14-building-my-2nd-shinyapp","2022-09-14-building-my-1st-shinyapp"]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2067,14 +2067,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -2118,12 +2110,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Curriculum Vitae","authors":[]}
+{"title":"Posts gallery","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2164,9 +2156,235 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Posts gallery">Posts gallery</h1>
+<a href="posts/2022-09-14-building-my-3rd-shinyapp/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["ShinyApp","databases"]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 14, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Yuri Souza</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-09-14-building-my-3rd-shinyapp/reseed.jpg"/>
+</div>
+<div class="description">
+<h2>Building my 3rd ShinyApp</h2>
+<div class="dt-tags">
+<div class="dt-tag">ShinyApp</div>
+<div class="dt-tag">databases</div>
+</div>
+<p>This was my third experience building a ShinyApp.</p>
+</div>
+</a>
+<a href="posts/2022-09-14-building-my-2nd-shinyapp/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["ShinyApp","SQL","databases"]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 24, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Yuri Souza</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-09-14-building-my-2nd-shinyapp/crud.jpg"/>
+</div>
+<div class="description">
+<h2>Building my 2nd ShinyApp</h2>
+<div class="dt-tags">
+<div class="dt-tag">ShinyApp</div>
+<div class="dt-tag">SQL</div>
+<div class="dt-tag">databases</div>
+</div>
+<p>My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.</p>
+</div>
+</a>
+<a href="posts/2022-09-14-building-my-1st-shinyapp/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["ShinyApp","databases"]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 24, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Yuri Souza</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-09-14-building-my-1st-shinyapp/defau.jpg"/>
+</div>
+<div class="description">
+<h2>Building my 1st ShinyApp</h2>
+<div class="dt-tags">
+<div class="dt-tag">ShinyApp</div>
+<div class="dt-tag">databases</div>
+</div>
+<p>This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master's.</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:Articles">Articles</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:databases">databases</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:ShinyApp">ShinyApp</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:SQL">SQL</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Curriculum Vitae</h1>
+<h1>Posts gallery</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2174,14 +2392,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<h3
-id="professional"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#244968;overflow:visible;position:relative;"><path d="M48 32C21.5 32 0 53.5 0 80v64C0 152.9 7.125 160 16 160H96V80C96 53.5 74.5 32 48 32zM256 380.6V320h224V128c0-53-43-96-96-96H111.6C121.8 45.38 128 61.88 128 80V384c0 38.88 34.62 69.63 74.75 63.13C234.3 442 256 412.5 256 380.6zM288 352v32c0 52.88-43 96-96 96h272c61.88 0 112-50.13 112-112c0-8.875-7.125-16-16-16H288z"/></svg>
-<a
-href="https://github.com/souzayuri/cv/blob/1df68a54abc8d9b7e14bd78474ff2781fe325687/cv-yuri-souza.pdf">Professional</a></h3>
-<h3
-id="academic"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#397298;overflow:visible;position:relative;"><path d="M48 32C21.5 32 0 53.5 0 80v64C0 152.9 7.125 160 16 160H96V80C96 53.5 74.5 32 48 32zM256 380.6V320h224V128c0-53-43-96-96-96H111.6C121.8 45.38 128 61.88 128 80V384c0 38.88 34.62 69.63 74.75 63.13C234.3 442 256 412.5 256 380.6zM288 352v32c0 52.88-43 96-96 96h272c61.88 0 112-50.13 112-112c0-8.875-7.125-16-16-16H288z"/></svg>
-<a
-href="https://github.com/souzayuri/cv/blob/1df68a54abc8d9b7e14bd78474ff2781fe325687/YuriSSouza_cv_09-29-2022.pdf">Academic</a></h3>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

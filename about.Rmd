@@ -1,5 +1,5 @@
 ---
-title: "I little bit about myself..."
+title: "A little bit about myself..."
 anchor_sections: FALSE
 description: |
 #  Work in progress
@@ -30,14 +30,6 @@ I spend most of my programming time in the <span itemscope itemtype ="https://sc
 
 
 I spend the bulk of my other efforts in coding with <span itemscope itemtype ="https://schema.org/ComputerLanguage">Python</span>, where I've used it for general machine learning models, natural language processing, and other endeavors. I also have to consistently dive into other programming as necessary, such as for web development and report generation. I like programming in general and solving problems with it, and I'm lucky enough to spend regular time simply learning new modeling and programming tricks.
-
-
-
-
-### Personal
-
-Displaced Texan... one-time psychologist/philosopher... aesthetically leans toward De Stijl, Barthelme, Ashbery, and synthwave... has been known to grow things like dahlias, okra, and exquisitely hot peppers... enjoys walking, running, biking... sometimes knows what he's talking about...
-
 
 
 ### Academic Background

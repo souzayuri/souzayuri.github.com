@@ -1,11 +1,15 @@
 ---
-title: "CV"
+title: "Curriculum Vitae"
 ---
-[Professional](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf)
-
-[academic](https://github.com/souzayuri/souzayuri.github.com/cv_academic.html)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(fontawesome)
 ```
 
+
+###  `r fa("scroll", fill = "#244968")` [Professional](https://github.com/souzayuri/cv/blob/1df68a54abc8d9b7e14bd78474ff2781fe325687/cv-yuri-souza.pdf)  
+
+### `r fa("scroll", fill = "#397298")` [Academic](https://github.com/souzayuri/cv/blob/1df68a54abc8d9b7e14bd78474ff2781fe325687/YuriSSouza_cv_09-29-2022.pdf)  
+ 
+ 
