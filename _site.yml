@@ -33,7 +33,7 @@ navbar:
     - text: "Contact"
       href: contact.html
     - text: "CV"
-      href: https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf
+      href: cv_academic.html
 base_url: https://souzayuri.github.io/
 collections:
   posts:

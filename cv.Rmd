@@ -1,6 +1,9 @@
 ---
 title: "CV"
 ---
+[Professional](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf)
+
+[academic](https://github.com/souzayuri/souzayuri.github.com/cv_academic.html)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
