@@ -21,15 +21,22 @@ icon.ion <- makeAwesomeIcon(icon = 'home', markerColor = "red", library='ion')
 
 leaflet(width = "100%", height = 500) %>% 
   setView(lat = 5, lng = -74, zoom = 2.5)  %>% 
+  addProviderTiles(providers$OpenStreetMap, group = "Open Street Map") %>%
   addProviderTiles(providers$Esri.WorldImagery, group = "Esri World Imagery") %>%
-  addLayersControl(baseGroups = c("OSM", "Esri World Imagery"), 
+  addProviderTiles(providers$Esri.NatGeoWorldMap, group = "National Geographic World Map") %>%
+  addProviderTiles(providers$OpenTopoMap, group = "Open Topo Map") %>%
+  addProviderTiles(providers$Esri.WorldPhysical, group = "World Physical") %>%
+  addProviderTiles(providers$Stamen, group = "Stamen") %>%
+  addLayersControl(baseGroups = c("Open Street Map", "Esri World Imagery", 
+                                  "National Geographic World Map", "Open Topo Map", 
+                                  "World Physical", "Stamen"), 
                    options = layersControlOptions(collapsed = TRUE)) %>% 
-  addTiles(group = "OSM") %>% 
+  addTiles(group = "Open Street Map") %>% 
   addMiniMap(zoomLevelOffset = -4, position = "bottomleft") %>%
   addAwesomeMarkers(lng=-80.2805853, lat=25.7220424, popup="The University of Miami", icon = icon.ion) %>% 
   addMarkers(lng=-47.543434, lat=-22.398523, popup="São Paulo State University") %>% 
   addLegend(position = "bottomleft", colors = c("red", "blue"),
-            labels= c("Current home", "Previous home"))
+            labels= c("Current affiliation", "Previous affiliation"))
 
 
 ```
