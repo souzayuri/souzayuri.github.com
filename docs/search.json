@@ -11,15 +11,15 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\r\n\r\nWhat I do\r\nI am an ecologist and researcher curious about how our world works. I\r\nhave been exploring different research topics since the beginning of my\r\ncareer, ranging from modeling plants to fieldwork and mammal surveys.\r\nMost of my research has focused on understanding how populations,\r\ncommunities, and ecosystems respond to human disturbances from different\r\nperspectives. So, I am interested in comprehending the Anthropocene’s\r\nconsequences on organisms and the environment.\r\nAcademic Background\r\nPresent\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-01T12:20:21-04:00"
+      "contents": "\r\n\r\nWhat I do\r\nI am an ecologist and researcher curious about how our world works. I\r\nhave been exploring different research topics since the beginning of my\r\ncareer, ranging from modeling plants to fieldwork and mammal surveys.\r\nMost of my research has focused on understanding how populations,\r\ncommunities, and ecosystems respond to human disturbances from different\r\nperspectives. So, I am interested in comprehending the Anthropocene’s\r\nconsequences on organisms and environmental maintenance.\r\nAcademic Background\r\nPresent\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-10-03T13:17:43-04:00"
     },
     {
       "path": "blog.html",
       "title": "Posts gallery",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-01T12:20:22-04:00"
+      "last_modified": "2022-10-03T13:17:45-04:00"
     },
     {
       "path": "contact.html",
@@ -27,21 +27,21 @@
       "description": "I am currently settled at The University of Miami",
       "author": [],
       "contents": "\r\n\r\nCox Science Building,\r\n1301 Memorial Dr,\r\nRoom 204,\r\nCoral Gables, FL 33146\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-01T12:20:23-04:00"
+      "last_modified": "2022-10-03T13:17:48-04:00"
     },
     {
       "path": "cv.html",
       "title": "Curriculum Vitae",
       "author": [],
       "contents": "\r\nProfessional\r\n(Click to download the\r\n)\r\n\r\nOr click here\r\nto access it on my\r\n\r\n.\r\n.\r\n.\r\n.\r\nAcademic\r\n(Click to download the\r\n)\r\n\r\nOr click here\r\nto access it on my\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-01T12:20:24-04:00"
+      "last_modified": "2022-10-03T13:17:51-04:00"
     },
     {
       "path": "index.html",
       "title": "Yuri Souza",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          Yuri Souza, Ph.D. student\r\n          \r\n          About\r\n          Projects\r\n          Blog\r\n          Research\r\n          Contact\r\n          CV\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Yuri Souza\r\n          \r\n          \r\n            \r\n              I am an Ecologist fascinated by how the environment and\r\n              its organisms relate to each other to keep the world as we\r\n              know moving. Besides Ecology, I also spend a lot of time\r\n              reading and searching about technology, computing, and\r\n              Data Science. This last one was something that grew on me\r\n              in the past years, so I am trying to connect its\r\n              techniques and tools with Ecology studies. During my free\r\n              time, I like hanging out with people to have beers and\r\n              talk about books, tv series, games, and sci-fi. Fun (nerd)\r\n              fact about me: I love the Middle Earth histories and the\r\n              MTG card game.\r\n              \r\n              “Le nathlam hí, pedo mellon a minno”\r\n            \r\n            \r\n              I am an Ecologist fascinated by how the environment and\r\n              its organisms relate to each other to keep the world as we\r\n              know moving. Besides Ecology, I also spend a lot of time\r\n              reading and searching about technology, computing, and\r\n              Data Science. This last one was something that grew on me\r\n              in the past years, so I am trying to connect its\r\n              techniques and tools with Ecology studies. During my free\r\n              time, I like hanging out with people to have beers and\r\n              talk about books, tv series, games, and sci-fi. Fun (nerd)\r\n              fact about me: I love the Middle Earth histories and the\r\n              MTG card game.\r\n              \r\n              “Le nathlam hí, pedo mellon a minno”\r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2022-10-01T12:20:24-04:00"
+      "last_modified": "2022-10-03T13:17:51-04:00"
     },
     {
       "path": "projects.html",
@@ -49,7 +49,7 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-01T12:20:25-04:00"
+      "last_modified": "2022-10-03T13:17:53-04:00"
     },
     {
       "path": "research.html",
@@ -57,7 +57,7 @@
       "description": "Work in progress",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-01T12:20:26-04:00"
+      "last_modified": "2022-10-03T13:17:54-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### What I do
 
-I am an ecologist and researcher curious about how our world works. I have been exploring different research topics since the beginning of my career, ranging from modeling plants to fieldwork and mammal surveys. Most of my research has focused on understanding how populations, communities, and ecosystems respond to human disturbances from different perspectives. So, I am interested in comprehending the Anthropocene's consequences on organisms and the environment.
+I am an ecologist and researcher curious about how our world works. I have been exploring different research topics since the beginning of my career, ranging from modeling plants to fieldwork and mammal surveys. Most of my research has focused on understanding how populations, communities, and ecosystems respond to human disturbances from different perspectives. So, I am interested in comprehending the Anthropocene's consequences on organisms and environmental maintenance.
 
 
 ### Academic Background
