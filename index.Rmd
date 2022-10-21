@@ -15,7 +15,7 @@ image: "data/images/YuriSSouza.jpg"
 #  - label: Email
 #    url: "mailto:yuri.souza@miami.edu"
 #output:
-#  postcards::jolla
+#  postcards::trestles
 
 site: distill::distill_website
 
@@ -24,9 +24,7 @@ site: distill::distill_website
 
 I am an Ecologist fascinated by how the environment and its organisms relate to each other to keep the world as we know moving. Besides Ecology, I also spend a lot of time reading and searching about technology, computing, and Data Science. This last one was something that grew on me in the past years, so I am trying to connect its techniques and tools with Ecology studies. During my free time, I like hanging out with people to have beers and talk about books, tv series, games, and sci-fi. Fun (nerd) fact about me: I love the Middle Earth histories.
 
-
 <img src="data/images/generatedtext.jpg" alt="isolated" width="565">
-
 
 "*Le nathlam hí, pedo mellon a minno*"
 
@@ -44,7 +42,7 @@ d-title h1 {
 ```
 
 
-<div class="layout-chunk" data-layout="l-screen">
+<div class="layout-chunk" data-layout="m-screen">
 <div id="particles-js"></div>
 </div>
 <script src="./assets/particles.min.js"></script>
