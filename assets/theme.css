@@ -354,3 +354,12 @@ d-article div.sourceCode pre {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+/* to cover all the page
+/*#particles-js {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
