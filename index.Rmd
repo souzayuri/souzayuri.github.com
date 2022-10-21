@@ -14,8 +14,8 @@ image: "data/images/YuriSSouza.jpg"
 #    url: "https://www.instagram.com/ssouzayuri/"
 #  - label: Email
 #    url: "mailto:yuri.souza@miami.edu"
-#output:
-#  postcards::trestles
+output:
+  postcards::jolla
 
 site: distill::distill_website
 
