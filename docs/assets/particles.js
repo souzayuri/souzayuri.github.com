@@ -20,69 +20,69 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 200,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 500
         }
       },
       color: {
-        value: '#fff'
+        value: '#ff6b00'
       },
       shape: {
         type: 'circle',
         stroke: {
-          width: 0,
-          color: '#ff0000'
+          width: 6,
+          color: '#7327a9'
         },
         polygon: {
-          nb_sides: 5
+          nb_sides: 8
         },
         image: {
-          src: '',
+          src: 'img/github.svg',
           width: 100,
           height: 100
         }
       },
       opacity: {
-        value: 1,
-        random: false,
+        value: 0.5,
+        random: true,
         anim: {
-          enable: false,
-          speed: 2,
-          opacity_min: 0,
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
           sync: false
         }
       },
       size: {
-        value: 20,
-        random: false,
+        value: 10,
+        random: true,
         anim: {
-          enable: false,
-          speed: 20,
-          size_min: 0,
-          sync: false
+          enable: true,
+          speed: 10,
+          size_min: 1,
+          sync: true
         }
       },
       line_linked: {
         enable: true,
-        distance: 100,
-        color: '#fff',
-        opacity: 1,
-        width: 1
+        distance: 150,
+        color: '#ff2e00',
+        opacity: 0.5,
+        width: 2
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 3,
         direction: 'none',
-        random: false,
+        random: true,
         straight: false,
-        out_mode: 'out',
+        out_mode: 'bounce',
         bounce: false,
         attract: {
           enable: false,
-          rotateX: 3000,
-          rotateY: 3000
+          rotateX: 600,
+          rotateY: 1200
         }
       },
       array: []
@@ -102,15 +102,17 @@ var pJS = function(tag_id, params){
       },
       modes: {
         grab:{
-          distance: 100,
+          distance: 400,
           line_linked:{
             opacity: 1
           }
         },
         bubble:{
-          distance: 200,
-          size: 80,
-          duration: 0.4
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3
         },
         repulse:{
           distance: 200,
@@ -125,7 +127,7 @@ var pJS = function(tag_id, params){
       },
       mouse:{}
     },
-    retina_detect: false,
+    retina_detect: true,
     fn: {
       interact: {},
       modes: {},
