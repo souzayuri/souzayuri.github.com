@@ -39,12 +39,3 @@ I am currently pursuing a Ph.D. in *Biology* at the University of Miami. Under t
 
 
 Along with my Ph.D. I am also finishing an [*MBA in Data Science & Analytics*](https://moveurl.me/yUJbAe). Through this MBA, I created a project called [ReSeed](https://souzayuri.github.io/posts/2022-09-14-building-my-3rd-shinyapp/) to improve my data management, storage, and visualization skills. I want to use these tools to help people during decision-making regarding data lack of information and potential collaborations. My project is part of a [FAPESP technician fellowship](https://bv.fapesp.br/en/bolsas/197712/curatorship-processing-and-synthesis-of-seed-dispersal-traits-of-plants-and-animals-from-literature-/) I previously owned to work as a data curator of plant trait information for [Dr. Marina Corrêa Côrtes](https://marinaccortes.wixsite.com/marina). 
-
-
-
-
-
-
-
-
-
