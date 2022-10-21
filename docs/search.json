@@ -18,10 +18,10 @@
     {
       "path": "contact.html",
       "title": "Contacts",
-      "description": "I am currently settled at The University of Miami",
+      "description": "I am currently settled at The University of Miami.\n\nEmail: *yuri.souza@miami.edu* or *desouza.s.yuri@gmail.com*",
       "author": [],
-      "contents": "\r\n\r\nCox Science Building,\r\n1301 Memorial Dr,\r\nRoom 204,\r\nCoral Gables, FL 33146\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-10-21T00:21:12-04:00"
+      "contents": "\r\n\r\nCox Science Building,\r\n1301 Memorial Dr,\r\nRoom 204,\r\nCoral Gables, FL 33146,\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-10-21T00:34:17-04:00"
     },
     {
       "path": "cv.html",

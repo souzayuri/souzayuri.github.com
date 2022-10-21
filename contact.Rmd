@@ -1,14 +1,16 @@
 ---
 title: "Contacts"
 description: |
-  I am currently settled at The University of Miami
+  I am currently settled at The University of Miami.
+  
+  Email: *yuri.souza@miami.edu* or *desouza.s.yuri@gmail.com*
 ---
 
 <p style="font-family: garamond, serif; font-size:16pt">
 Cox Science Building,  
 1301 Memorial Dr,  
 Room 204,  
-Coral Gables, FL 33146  
+Coral Gables, FL 33146, 
 </p>
 
 
