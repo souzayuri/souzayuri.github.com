@@ -31,6 +31,10 @@ I am an Ecologist fascinated by how the environment and its organisms relate to 
 "*Le nathlam hí, pedo mellon a minno*"
 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+```
+
 ```{css echo=FALSE}
 
 d-title h1 {
@@ -45,4 +49,3 @@ d-title h1 {
 </div>
 <script src="./assets/particles.min.js"></script>
 <script src="./assets/app.js"></script>
-
