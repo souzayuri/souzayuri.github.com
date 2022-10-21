@@ -1,5 +1,5 @@
 ---
-title: "Yuri Souza"
+title: ""
 image: "data/images/YuriSSouza.jpg"
 #links:
 #  - label: Researchgate
@@ -42,6 +42,8 @@ d-title h1 {
 </div>
 <script src="./assets/particles.min.js"></script>
 <script src="./assets/app.js"></script>
+
+### Yuri Souza
 
 I am an Ecologist fascinated by how the environment and its organisms relate to each other to keep the world as we know moving. Besides Ecology, I also spend a lot of time reading and searching about technology, computing, and Data Science. This last one was something that grew on me in the past years, so I am trying to connect its techniques and tools with Ecology studies. During my free time, I like hanging out with people to have beers and talk about books, tv series, games, and sci-fi. Fun (nerd) fact about me: I love the Middle Earth histories.
 
