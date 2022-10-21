@@ -27,7 +27,7 @@ At this point, I had answered two questions about my project: 1- which app struc
 
 Unfortunately, Amazon AWS is a paid server. Fortunately, it gives you 1-years of free tests. The app I show here is not on AWS anymore because my license expired. However, you can find it on my [*YouTube channel*](https://youtu.be/jIEttyrSTbE) and check what the final version looks like. 
 
-The version I present here (https://souzayuri.shinyapps.io/CRUD_app/) is the one before I used MySQL and can give you some insights into this powerful data-collection tool and its potential to facilitate team collaborations. 
+The version I present here (https://souzayuri.shinyapps.io/CRUD_app/) is the one before I used MySQL and can give you some insights into this powerful data-collection tool and its potential to facilitate team collaborations. You can try it using this test login: **yuri.souza@unesp.br**, password:**1234**
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

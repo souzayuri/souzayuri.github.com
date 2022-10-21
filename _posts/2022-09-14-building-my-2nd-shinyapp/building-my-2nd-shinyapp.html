@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["crud.jpg"]}
+  {"type":"character","attributes":{},"value":["building-my-2nd-shinyapp_files/anchor-4.2.2/anchor.min.js","building-my-2nd-shinyapp_files/bowser-1.9.3/bowser.min.js","building-my-2nd-shinyapp_files/distill-2.2.21/template.v2.js","building-my-2nd-shinyapp_files/header-attrs-2.14/header-attrs.js","building-my-2nd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.js","building-my-2nd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.js","building-my-2nd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.map","building-my-2nd-shinyapp_files/popper-2.6.0/popper.min.js","building-my-2nd-shinyapp_files/tippy-6.2.7/tippy-bundle.umd.min.js","building-my-2nd-shinyapp_files/tippy-6.2.7/tippy-light-border.css","building-my-2nd-shinyapp_files/tippy-6.2.7/tippy.css","building-my-2nd-shinyapp_files/tippy-6.2.7/tippy.umd.min.js","building-my-2nd-shinyapp_files/webcomponents-2.0.0/webcomponents.js","crud.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -189,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1261,15 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1468,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="building-my-2nd-shinyapp_files/header-attrs-2.14/header-attrs.js"></script>
+  <script src="building-my-2nd-shinyapp_files/header-attrs-2.16/header-attrs.js"></script>
   <script src="building-my-2nd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="building-my-2nd-shinyapp_files/popper-2.6.0/popper.min.js"></script>
   <link href="building-my-2nd-shinyapp_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1507,9 +1514,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">databases</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>My second experience with Shiny was quite different and
-challenging. Here I created a CRUD app connected to SQL database
-management.</p></p>
+<p><p>My second experience with Shiny was quite different and challenging. Here I created a CRUD app connected to SQL database management.</p></p>
 </div>
 
 <div class="d-byline">
@@ -1519,65 +1524,16 @@ management.</p></p>
 </div>
 
 <div class="d-article">
-<p>This app was the most challenging experience I ever had with R and
-programming (Not that I have been programming a lot). The final result
-was very useful and pleasurable because I learned a lot. But first, let
-me tell you about the motivation for this App.</p>
-<p>I worked with a group led by Dr. <a
-href="https://marinaccortes.wixsite.com/marina"><em>Marina
-Cortês</em></a>. This group collected data from fieldwork and
-literature, with people collaborating from different places in the
-world. The data consist of plant attributes/traits. One of the
-challenges of this kind of work is keeping the data structure since
-different places use dots and commas differently. You probably have
-experienced opening an Excel table, and the data was like a mess with
-small numbers or coordinates represented as it was money information.
-This group was facing this problem. So, there was a need for a platform
-that could receive and integrate the data without any problem with data
-formatting.</p>
-<p>The way we found to solve this issue was by creating a <a
-href="https://www.codecademy.com/article/what-is-crud"><em>CRUD</em></a>
-(Create, Read, Update, Delete) app. The idea was to create a platform
-with tabs and options in which the user does not need to write, they
-just need to select, then decrease problems such as word formatting or
-number punctuation. However, these data needed to be stored in some
-database with real updating to avoid data overlapping or input
-duplication, and here my problem starts.</p>
-<p>I started the app using the <a
-href="https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/">Tychobra</a>
-tutorial. I chose this one because 1) it was the only example available
-on the internet, and 2) it has an option for login, which allowed only
-give access to those people who were working with input data. This login
-option also allowed me to track the person who entered the data, making
-it possible to ask them about some mistakes or details on the data.
-However, this tutorial uses the SQLite database structure, which hosts
-the data locally and uses SQL structure, something I have never heard of
-before. So, to solve it, I needed to find a SQL structure that stores
-the data remotely, and I found my answer in the MySQL method through
-this <a
-href="https://shiny.rstudio.com/articles/persistent-data-storage.html">tutorial</a>.</p>
-<p>At this point, I had answered two questions about my project: 1-
-which app structure I should use, and 2- where to store data. However, I
-figured it would take something necessary to intermediate the
-information exchange, and then I had to learn about servers. I needed to
-find a way to connect my table in MySQL to the app visual structure on
-R. I found my answer on <a href="https://aws.amazon.com/"><em>Amazon
-AWS</em></a>.</p>
-<p>Unfortunately, Amazon AWS is a paid server. Fortunately, it gives you
-1-years of free tests. The app I show here is not on AWS anymore because
-my license expired. However, you can find it on my <a
-href="https://youtu.be/jIEttyrSTbE"><em>YouTube channel</em></a> and
-check what the final version looks like.</p>
-<p>The version I present here (<a
-href="https://souzayuri.shinyapps.io/CRUD_app/"
-class="uri">https://souzayuri.shinyapps.io/CRUD_app/</a>) is the one
-before I used MySQL and can give you some insights into this powerful
-data-collection tool and its potential to facilitate team
-collaborations.</p>
+<p>This app was the most challenging experience I ever had with R and programming (Not that I have been programming a lot). The final result was very useful and pleasurable because I learned a lot. But first, let me tell you about the motivation for this App.</p>
+<p>I worked with a group led by Dr. <a href="https://marinaccortes.wixsite.com/marina"><em>Marina Cortês</em></a>. This group collected data from fieldwork and literature, with people collaborating from different places in the world. The data consist of plant attributes/traits. One of the challenges of this kind of work is keeping the data structure since different places use dots and commas differently. You probably have experienced opening an Excel table, and the data was like a mess with small numbers or coordinates represented as it was money information. This group was facing this problem. So, there was a need for a platform that could receive and integrate the data without any problem with data formatting.</p>
+<p>The way we found to solve this issue was by creating a <a href="https://www.codecademy.com/article/what-is-crud"><em>CRUD</em></a> (Create, Read, Update, Delete) app. The idea was to create a platform with tabs and options in which the user does not need to write, they just need to select, then decrease problems such as word formatting or number punctuation. However, these data needed to be stored in some database with real updating to avoid data overlapping or input duplication, and here my problem starts.</p>
+<p>I started the app using the <a href="https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/">Tychobra</a> tutorial. I chose this one because 1) it was the only example available on the internet, and 2) it has an option for login, which allowed only give access to those people who were working with input data. This login option also allowed me to track the person who entered the data, making it possible to ask them about some mistakes or details on the data. However, this tutorial uses the SQLite database structure, which hosts the data locally and uses SQL structure, something I have never heard of before. So, to solve it, I needed to find a SQL structure that stores the data remotely, and I found my answer in the MySQL method through this <a href="https://shiny.rstudio.com/articles/persistent-data-storage.html">tutorial</a>.</p>
+<p>At this point, I had answered two questions about my project: 1- which app structure I should use, and 2- where to store data. However, I figured it would take something necessary to intermediate the information exchange, and then I had to learn about servers. I needed to find a way to connect my table in MySQL to the app visual structure on R. I found my answer on <a href="https://aws.amazon.com/"><em>Amazon AWS</em></a>.</p>
+<p>Unfortunately, Amazon AWS is a paid server. Fortunately, it gives you 1-years of free tests. The app I show here is not on AWS anymore because my license expired. However, you can find it on my <a href="https://youtu.be/jIEttyrSTbE"><em>YouTube channel</em></a> and check what the final version looks like.</p>
+<p>The version I present here (<a href="https://souzayuri.shinyapps.io/CRUD_app/" class="uri">https://souzayuri.shinyapps.io/CRUD_app/</a>) is the one before I used MySQL and can give you some insights into this powerful data-collection tool and its potential to facilitate team collaborations. You can try it using this test login: <strong><a href="mailto:yuri.souza@unesp.br" class="email">yuri.souza@unesp.br</a></strong>, password:<strong>1234</strong></p>
 <iframe src="https://souzayuri.shinyapps.io/CRUD_app/" style="border: 2px solid black; width: 120%; height: 500px;">
 </iframe>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
