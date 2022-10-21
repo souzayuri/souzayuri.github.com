@@ -1,6 +1,6 @@
 name: "yuri_souza"
 title: "Yuri Souza, Ph.D. student"
-theme: theme.css 
+theme: assets/theme.css 
 description: |
   Yuri Souza
 output_dir: "docs"
