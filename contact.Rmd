@@ -33,8 +33,9 @@ leaflet(width = "100%", height = 500) %>%
                    options = layersControlOptions(collapsed = TRUE)) %>% 
   addTiles(group = "Open Street Map") %>% 
   addMiniMap(zoomLevelOffset = -4, position = "bottomleft") %>%
-  addAwesomeMarkers(lng=-80.2805853, lat=25.7220424, popup="The University of Miami", icon = icon.ion) %>% 
-  addMarkers(lng=-47.543434, lat=-22.398523, popup="São Paulo State University") %>% 
+  addAwesomeMarkers(lng=-80.2795266, lat=25.7221058, popup="The University of Miami", icon = icon.ion) %>% 
+  addMarkers(lng=-47.5436089, lat=-22.3986622, popup="São Paulo State University") %>% 
+  addMarkers(lng=-47.6348088, lat=-22.7114286, popup="University of São Paulo - Esalq") %>% 
   addLegend(position = "bottomleft", colors = c("red", "blue"),
             labels= c("Current affiliation", "Previous affiliation"))
 
