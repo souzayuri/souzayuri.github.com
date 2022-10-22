@@ -1,7 +1,14 @@
 ---
-title: "About my research"
-description: |
-  Work in progress
+title: "Publications"
+listing:
+  posts:
+    - 2022-10-21-paper_tortoise_frugivory
+    - 2022-01-22-paper_growth_form
+    - 2021-01-14-book_defaunation
+    - 2019-06-10-paper_data_paper_mammals
+    - 2018-06-28-paper_data_paper_amphibians
+    - 2018-03-20-paper_pinnus_invasion
+
 ---
 
 ```{r setup, include=FALSE}

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://souzayuri.github.io/about.html</loc>
-    <lastmod>2022-10-21T00:27:14-04:00</lastmod>
+    <lastmod>2022-10-21T20:06:06-04:00</lastmod>
   </url>
   <url>
     <loc>https://souzayuri.github.io/blog.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://souzayuri.github.io/contact.html</loc>
-    <lastmod>2022-10-21T00:33:56-04:00</lastmod>
+    <lastmod>2022-10-21T20:07:50-04:00</lastmod>
   </url>
   <url>
     <loc>https://souzayuri.github.io/cv.html</loc>
@@ -26,7 +26,11 @@
   </url>
   <url>
     <loc>https://souzayuri.github.io/research.html</loc>
-    <lastmod>2022-10-07T10:52:10-04:00</lastmod>
+    <lastmod>2022-10-21T21:42:09-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://souzayuri.github.io/posts/2022-10-21-paper_tortoise_frugivory/</loc>
+    <lastmod>2022-10-21T22:01:20-04:00</lastmod>
   </url>
   <url>
     <loc>https://souzayuri.github.io/posts/2022-09-14-building-my-1st-shinyapp/</loc>
@@ -39,5 +43,25 @@
   <url>
     <loc>https://souzayuri.github.io/posts/2022-09-14-building-my-3rd-shinyapp/</loc>
     <lastmod>2022-10-07T10:52:09-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://souzayuri.github.io/posts/2022-01-22-paper_growth_form/</loc>
+    <lastmod>2022-10-21T22:01:02-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://souzayuri.github.io/posts/2021-01-14-book_defaunation/</loc>
+    <lastmod>2022-10-21T22:00:54-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://souzayuri.github.io/posts/2019-06-10-paper_data_paper_mammals/</loc>
+    <lastmod>2022-10-21T22:00:45-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://souzayuri.github.io/posts/2018-06-28-paper_data_paper_amphibians/</loc>
+    <lastmod>2022-10-21T22:00:37-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://souzayuri.github.io/posts/2018-03-20-paper_pinnus_invasion/</loc>
+    <lastmod>2022-10-21T22:00:30-04:00</lastmod>
   </url>
 </urlset>

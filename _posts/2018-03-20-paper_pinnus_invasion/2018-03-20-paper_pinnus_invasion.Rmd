@@ -1,0 +1,26 @@
+---
+title: "Temporal analysis of biological invasion by Pinus spp. in humid area of Cerrado domain"
+description: |
+  Considering the importance of life history knowledge for the mitigation of exotic species, here we sought to investigate the history of invasion by Pinus in wetlands at the Ecological Station of Itirapina, SP, using near infrared reflectance (NIR) and the Normalized Difference Vegetation Index (NDVI) for the period 1985–2011.
+categories:
+  - Papers 
+#  - 2018
+date: 03-20-2018
+preview: pinnus.png
+output:
+  distill::distill_article:
+    self_contained: false
+
+---
+**Authors:** *Dhemerson Conciani, **Yuri Silva de Souza**, Paulo Henrique Peira Ruffino, Denise Zanchetta*
+
+
+**Abstract**
+
+The Cerrado domain in Brazil currently presents only 20% of its original coverage, 8.21% of which is in protected areas. Of this total, 1% is in the state of São Paulo, on private properties or protected in conservation units. In view of these environmental conditions and the richness of this system, the Cerrado is considered one of the 25 most important terrestrial sites for conservation. Despite conservation efforts, this domain is plagued by the invasion of exotic species such as the Pinus genus. Considering the importance of life history knowledge for the mitigation of exotic species, we sought to investigate the history of invasion by Pinus in wetlands at the Ecological Station of Itirapina, SP, using near infrared reflectance (NIR) and the Normalized Difference Vegetation Index (NDVI) for the period 1985–2011. Our results showed that areas with high occupation of Pinus spp. have a higher NIR reflectance value, and that such reflectance varied over the analyzed period, as well as between the areas occupied by Pinus spp. Despite this variation, the results from the NDVI showed a linear increase in the density and biomass of this vegetation for the same period, indicating that spatial limitations do not affect the development of Pinus spp. The use of NIR and NDVI measurements together proved to be a good tool for studies aiming to understand temporal patterns of invasion.
+
+Click in the link to access the paper: [https://periodicos.ufpe.br/revistas/rbgfe/article/view/234195/29379](https://periodicos.ufpe.br/revistas/rbgfe/article/view/234195)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/2022-10-21-paper_tortoise_frugivory/",
+    "title": "Frugivory and seed dispersal by the Red-footed Tortoise Chelonoidis carbonaria",
+    "description": "Here, we assessed the maximum width of seeds this species could ingest, the mean gut retention time (GRT), and the post-consumption germination capacity for tropical fruit species.",
+    "author": [],
+    "date": "2022-10-21",
+    "categories": [
+      "Papers"
+    ],
+    "contents": "\r\nauthors: Lais Lautenschlager, Yuri Souza, Mauro Galetti\r\nAbstract\r\nSeed dispersal by frugivores is essential in plant life cycles, with birds and mammals the principal and well-studied dispersal agents. However, there is an increasing recognition that terrestrial tortoises could also be considered important seed dispersers in many ecosystems. The red-footed tortoise (Chelonoidis carbonaria) is one of the largest terrestrial tortoises in South America and is thought to disperse large seeds. However, little is known about their role as seed dispersers, and their potential use as restorers of defaunated areas. Here, we assessed the maximum width of seeds this species could ingest, the mean gut retention time (GRT), and the post-consumption germination capacity for tropical fruit species. Forty different fruit species were offered to eight captive individuals, obtaining a maximum seed width swallowed of 23 mm. We used four native plant species to measure the GRT within four tortoises, and we found a mean retention time of 18.92 ± 4.81 days. We also found that sex is an important indicator of GRT, with females presenting longer retention periods. This novel finding may be due to the higher metabolic defecating and dispersing rates of males. Although germination proportions varied between the four plant species used in the experiment, overall defecated seeds germinated faster than control seeds. We conclude that red-footed tortoises are potentially important seed dispersers due to their ability to swallow a large quantity and size of seeds while accelerating seed germination rates. This species should be considered a viable ecological substitute for large frugivores in rewilding projects, as C. carbonaria performs similar functions to large dispersers that have been extirpated due to defaunation processes.\r\nClick in the link to access the paper: https://doi.org/10.1016/j.actao.2022.103837\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-10-21-paper_tortoise_frugivory/tortoise_frugivory.png",
+    "last_modified": "2022-10-21T22:01:20-04:00",
+    "input_file": {},
+    "preview_width": 562,
+    "preview_height": 529
+  },
+  {
     "path": "posts/2022-09-14-building-my-1st-shinyapp/",
     "title": "Building my 1st ShinyApp",
     "description": "This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master's.",
@@ -59,5 +75,85 @@
     "preview": "posts/2022-09-14-building-my-3rd-shinyapp/reseed.jpg",
     "last_modified": "2022-10-07T10:52:09-04:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2022-01-22-paper_growth_form/",
+    "title": "Large mammalian herbivores modulate plant growth form diversity in a tropical rainforest",
+    "description": "Here, we experimentally evaluate how large mammalian herbivores affect the dominance, diversity and coexistence of these major tropical forest plant growth forms, by monitoring communities of saplings on the understorey in 43 paired exclusion plots in a long-term replicated exclusion experiment in the understorey of the Atlantic forest of Brazil.",
+    "author": [],
+    "date": "2022-01-22",
+    "categories": [
+      "Papers"
+    ],
+    "contents": "\r\nAuthors: Yuri Souza, Nacho Villar, Valesca Zipparro, Sérgio Nazareth, Mauro Galetti\r\nAbstract\r\nThe world’s terrestrial biomes are broadly classified according to the dominant plant growth forms that define ecosystem structure and processes. Although the abundance and distribution of different plant growth forms can be strongly determined by factors such as climate and soil composition, large mammalian herbivores have a strong impact on plant communities, thus defaunation (the local or functional extinction of large animals) has the potential to alter the compositional structure of plant growth forms in natural ecosystems. Tropical rainforests sustain a high diversity of growth forms, including trees, palms, lianas, shrubs, herbs and bamboos, all of which play important ecosystem functions. Here, we experimentally evaluate how large mammalian herbivores affect the dominance, diversity and coexistence of these major tropical forest plant growth forms, by monitoring communities of saplings on the understorey in 43 paired exclusion plots in a long-term replicated exclusion experiment in the understorey of the Atlantic forest of Brazil. Over the course of 10 years large herbivore exclusion decreased diversity among growth forms, increased the absolute abundance of palms and trees (22% and 38% respectively) and increased the diversity of species within these two groups, to the detriment of other growth forms. Furthermore, all pairwise relationships between growth forms were positive on plots where herbivores had access, whereas several strong negative relationships emerged in plots where herbivores were excluded. This occurred despite strong background directional temporal trends affecting plant communities in both experimental treatments across the region. Synthesis. Our work indicates that the defaunation alters growth form dominance by favouring palms and trees while eroding diversity among growth forms and coexistence on a temporal scale. Large herbivore mammals promote diversity among growth forms, preventing the hyper-dominance of trees and palms, yet without supressing the diversity of species within growth forms. We argue that large herbivore mammals affect growth forms through several non-mutually exclusive mechanisms, including herbivory, seed dispersal and physical disturbance, as well as differential effects linked to the morphological and physiological adaptations of growth forms. We conclude that defaunation might lead to profound impacts on important ecosystem functions underpinned by growth form diversity, and result in vertical and horizontal structural simplification of tropical rainforests.\r\nClick in the link to access the paper: https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2745.13846\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-01-22-paper_growth_form/growth_form.png",
+    "last_modified": "2022-10-21T22:01:02-04:00",
+    "input_file": {},
+    "preview_width": 516,
+    "preview_height": 874
+  },
+  {
+    "path": "posts/2021-01-14-book_defaunation/",
+    "title": "Causes and consequences of large-scale defaunation in the Atlantic forest",
+    "description": "In this chapter, we describe the causes and consequences of large-scale defaunation in the Atlantic Forest of South America. We identify and quantify the magnitude of the main anthropogenic drivers of defaunation and stimulate a debate on how to revert the loss of fauna to restore biodiversity and ecosystem functions and services.",
+    "author": [],
+    "date": "2021-01-14",
+    "categories": [
+      "Books"
+    ],
+    "contents": "\r\nAuthors: Mauro Galetti, Fernando Gonçalves, Nacho Villar, Valesca B. Zipparro, Claudia Paz, Calebe Mendes, Laís Lautenschlager, Yuri Souza, Paula Akkawi, Felipe Pedrosa, Letícia Bulascoschi, Carolina Bello, Anaiá P. Sevá, Lilian Sales, Luísa Genes, Fernanda Abra, Ricardo S. Bovendorp\r\nAbstract\r\nThe Atlantic Forest of South America hosts one of the world’s most diverse and threatened tropical forest biota. After five centuries of European human expansion, most Atlantic Forest landscapes are archipelagos of small forest fragments surrounded by open-habitat matrices. In this chapter, we describe the causes and consequences of large-scale defaunation in the Atlantic Forest of South America. We identify and quantify the magnitude of the main anthropogenic drivers of defaunation and stimulate a debate on how to revert the loss of fauna to restore biodiversity and ecosystem functions and services. The magnitude of the impact of defaunation in the Atlantic Forest is hard to estimate, but we can predict that, at large scale, habitat loss, fragmentation, and degradation are the most common threats to terrestrial populations. Other threats vary in importance according to the taxonomic group. In general, apex predators, other carnivores, large-bodied mammals, and large herbivores were among the most defaunated functional groups and the loss of these animals has also a strong impact on the ecosystem services. Given the extent of the consequences of defaunation in the Atlantic Forest, mitigation strategies are imperative. Habitat restoration would clearly be effective in building space for defaunation mitigation but reversing the pervasive defaunation that occurred in the Atlantic Forest is by no means a straightforward task. Nonetheless, it will be fundamental to assure the persistence of the biodiversity in the Atlantic Forest remnants.\r\nClick in the link to access the paper: https://link.springer.com/chapter/10.1007/978-3-030-55322-7_14\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-01-14-book_defaunation/book_defau.png",
+    "last_modified": "2022-10-21T22:00:54-04:00",
+    "input_file": {},
+    "preview_width": 612,
+    "preview_height": 452
+  },
+  {
+    "path": "posts/2019-06-10-paper_data_paper_mammals/",
+    "title": "ATLANTIC MAMMALS: a data set of assemblages of medium-and large-sized mammals of the Atlantic Forest of South America",
+    "description": "Here, we present the ATLANTIC MAMMALS, an open data set on information on medium- and large-sized mammal assemblages in the Atlantic Forest of Brazil, Paraguay, and Argentina. A total of 129 studies were compiled, including published and in press peer-reviewed papers, book chapters, theses and unpublished data.",
+    "author": [],
+    "date": "2019-06-10",
+    "categories": [
+      "Papers"
+    ],
+    "contents": "\r\nAuthors: Yuri Souza, Fernando Gonçalves, Laís Lautenschlager, Paula Akkawi,Calebe Mendes, Mariana M. Carvalho, Ricardo S. Bovendorp, Hugo Fernandes-Ferreira, Clarissa Rosa,Maurício Eduardo Graipel, Nivaldo Peroni, Jorge José Cherem, Juliano André Bogoni, Carlos Rodrigo Brocardo, João Miranda, Luciana Zago da Silva, Geruza Melo, Nilton Cáceres, Jonas Sponchiado, Milton Cezar Ribeiro, Mauro Galetti\r\nAbstract\r\nBiodiversity inventories contain important information about species richness, community structure, and composition, and are the first step in developing any conservation and mitigation strategies. The Atlantic Forest of South America is home to around 334 species of small-, medium-, and large-sized mammals, and is currently restricted to less than 12% of its original cover. Here, we present the ATLANTIC MAMMALS, an open data set on information on medium- and large-sized mammal assemblages in the Atlantic Forest of Brazil, Paraguay, and Argentina. A total of 129 studies were compiled, including published and in press peer-reviewed papers, book chapters, theses and unpublished data. We mapped 244 assemblages, eight orders, 63 genera, and 94 species (24 of which are classified as threatened by the IUCN Red List) distributed in 128 protected and 116 unprotected areas. Species richness of the mammalian assemblages varied from 1 to 39 species (mean 15). The most recorded species in the entire biome was Dasypus novemcinctus, followed by Cerdocyon thous and Procyon cancrivorous. These data can be useful in support of macroecological studies and conservation planning strategies. Please cite this data paper when the data are used in publications. We also request that researchers and teachers inform us of how they are using the data.\r\nClick in the link to access the paper: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.2785\r\n\r\n\r\n\r\n",
+    "preview": "posts/2019-06-10-paper_data_paper_mammals/data_paper_mamals.png",
+    "last_modified": "2022-10-21T22:00:45-04:00",
+    "input_file": {},
+    "preview_width": 466,
+    "preview_height": 673
+  },
+  {
+    "path": "posts/2018-06-28-paper_data_paper_amphibians/",
+    "title": "ATLANTIC AMPHIBIANS: a data set of amphibian communities from the Atlantic Forests of South America",
+    "description": "Here we present a data set containing information about amphibian communities sampled throughout the Atlantic Forest Biome in South America. The data were extracted from 389 bibliographic references (articles, books, theses, and dissertations) representing inventories of amphibian communities from 1940 to 2017.",
+    "author": [],
+    "date": "2018-06-28",
+    "categories": [
+      "Papers"
+    ],
+    "contents": "\r\nAuthors: Maurício Humberto Vancine, Kauã da Silva Duarte, Yuri Silva de Souza, João Gabriel Ribeiro Giovanelli, Paulo Mateus Martins-Sobrinho, Ariel López, Rafael Parelli Bovo, Fábio Maffei, Marília Bruzzi Lion, José Wagner Ribeiro Júnior, Ricardo Brassaloti, Carolina Ortiz Rocha da Costa, Henrique Oliveira Sawakuchi, Lucas Rodriguez Forti, Pier Cacciali, Jaime Bertoluci, Célio Fernando Baptista Haddad, Milton Cezar Ribeiro\r\nAbstract\r\nAmphibians are among the most threatened vertebrates in the world and this is also true for those inhabiting the Atlantic Forest hotspot, living in ecosystems that are highly degraded and threatened by anthropogenic activities. We present a data set containing information about amphibian communities sampled throughout the Atlantic Forest Biome in South America. The data were extracted from 389 bibliographic references (articles, books, theses, and dissertations) representing inventories of amphibian communities from 1940 to 2017. The data set includes 17,619 records of 528 species with taxonomic certainty, from 1,163 study sites. Of all the records, 14,450 (82%) were classified using the criterion of endemism; of those, 7,787 (44%) were considered endemic and 6,663 (38%) were not. Historically, multiple sampling methods were used to survey amphibians, the most representative methods being active surveys (82.1%), surveys at breeding sites (20%), pitfall traps (15.3%), and occasional encounters (14.5%). Species richness averaged 15.2 ± 11.3 (mean ± SD), ranging from 1 to 80 species per site. We found a low dominance in the communities, with 10 species occurring in about 26% of communities: Physalaemus cuvieri (4.1%), Dendropsophus minutus (3.8%), Boana faber (3.1%), Scinax fuscovarius (2.8%), Leptodactylus latrans (2.7%), Leptodactylus fuscus (2.6%), Boana albopunctata (2.3%), Dendropsophus nanus (1.6%), Rhinella ornata (1.6%), and Leptodactylus mystacinus (1.6%). This data set represents a major effort to compile inventories of amphibian communities for the Neotropical region, filling a large gap in the data on the Atlantic Forest hotspot. We hope this data set can be used as a credible tool in the proposal of new studies on amphibian sampling and even in the development of conservation planning for these taxa. This information also has great relevance for macroecological studies, being foundational for both conservation and restoration strategies in this biodiversity hotspot. No copyright or proprietary restrictions are associated with the use of this data set. Please cite this data paper when the data are used in publications or teaching events.\r\nClick in the link to access the paper: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.2392\r\n\r\n\r\n\r\n",
+    "preview": "posts/2018-06-28-paper_data_paper_amphibians/amphibians.png",
+    "last_modified": "2022-10-21T22:00:37-04:00",
+    "input_file": {},
+    "preview_width": 384,
+    "preview_height": 536
+  },
+  {
+    "path": "posts/2018-03-20-paper_pinnus_invasion/",
+    "title": "Temporal analysis of biological invasion by Pinus spp. in humid area of Cerrado domain",
+    "description": "Considering the importance of life history knowledge for the mitigation of exotic species, here we sought to investigate the history of invasion by Pinus in wetlands at the Ecological Station of Itirapina, SP, using near infrared reflectance (NIR) and the Normalized Difference Vegetation Index (NDVI) for the period 1985–2011.",
+    "author": [],
+    "date": "2018-03-20",
+    "categories": [
+      "Papers"
+    ],
+    "contents": "\r\nAuthors: Dhemerson Conciani, Yuri Silva de Souza, Paulo Henrique Peira Ruffino, Denise Zanchetta\r\nAbstract\r\nThe Cerrado domain in Brazil currently presents only 20% of its original coverage, 8.21% of which is in protected areas. Of this total, 1% is in the state of São Paulo, on private properties or protected in conservation units. In view of these environmental conditions and the richness of this system, the Cerrado is considered one of the 25 most important terrestrial sites for conservation. Despite conservation efforts, this domain is plagued by the invasion of exotic species such as the Pinus genus. Considering the importance of life history knowledge for the mitigation of exotic species, we sought to investigate the history of invasion by Pinus in wetlands at the Ecological Station of Itirapina, SP, using near infrared reflectance (NIR) and the Normalized Difference Vegetation Index (NDVI) for the period 1985–2011. Our results showed that areas with high occupation of Pinus spp. have a higher NIR reflectance value, and that such reflectance varied over the analyzed period, as well as between the areas occupied by Pinus spp. Despite this variation, the results from the NDVI showed a linear increase in the density and biomass of this vegetation for the same period, indicating that spatial limitations do not affect the development of Pinus spp. The use of NIR and NDVI measurements together proved to be a good tool for studies aiming to understand temporal patterns of invasion.\r\nClick in the link to access the paper: https://periodicos.ufpe.br/revistas/rbgfe/article/view/234195/29379\r\n\r\n\r\n\r\n",
+    "preview": "posts/2018-03-20-paper_pinnus_invasion/pinnus.png",
+    "last_modified": "2022-10-21T22:00:30-04:00",
+    "input_file": {},
+    "preview_width": 631,
+    "preview_height": 413
   }
 ]

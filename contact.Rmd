@@ -1,5 +1,5 @@
 ---
-title: "Contacts"
+title: "Contact"
 description: |
   I am currently settled at The University of Miami.
   

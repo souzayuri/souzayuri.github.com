@@ -88,23 +88,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Yuri Souza, Ph.D. student: About my research</title>
+  <title>Yuri Souza, Ph.D. student: Publications</title>
 
-  <meta property="description" itemprop="description" content="Work in progress"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Yuri Souza, Ph.D. student: About my research"/>
+  <meta property="og:title" content="Yuri Souza, Ph.D. student: Publications"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Work in progress"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Yuri Souza, Ph.D. student"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Yuri Souza, Ph.D. student: About my research"/>
-  <meta property="twitter:description" content="Work in progress"/>
+  <meta property="twitter:title" content="Yuri Souza, Ph.D. student: Publications"/>
   <meta property="twitter:site" content="@Yuri_S_Souza"/>
   <meta property="twitter:creator" content="@Yuri_S_Souza"/>
 
@@ -112,7 +109,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About my research"]},{"type":"character","attributes":{},"value":["Work in progress"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Publications"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"character","attributes":{},"value":["2022-10-21-paper_tortoise_frugivory","2022-01-22-paper_growth_form","2021-01-14-book_defaunation","2019-06-10-paper_data_paper_mammals","2018-06-28-paper_data_paper_amphibians","2018-03-20-paper_pinnus_invasion"]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2725,12 +2722,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About my research","description":"Work in progress","authors":[]}
+{"title":"Publications","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2771,12 +2768,275 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Publications">Publications</h1>
+<a href="posts/2022-10-21-paper_tortoise_frugivory/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Papers"]}</script>
+<div class="metadata">
+<div class="publishedDate">Oct. 21, 2022</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-10-21-paper_tortoise_frugivory/tortoise_frugivory.png"/>
+</div>
+<div class="description">
+<h2>Frugivory and seed dispersal by the Red-footed Tortoise Chelonoidis carbonaria</h2>
+<div class="dt-tags">
+<div class="dt-tag">Papers</div>
+</div>
+<p>Here, we assessed the maximum width of seeds this species could ingest, the mean gut retention time (GRT), and the post-consumption germination capacity for tropical fruit species.</p>
+</div>
+</a>
+<a href="posts/2022-01-22-paper_growth_form/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Papers"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 22, 2022</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-01-22-paper_growth_form/growth_form.png"/>
+</div>
+<div class="description">
+<h2>Large mammalian herbivores modulate plant growth form diversity in a tropical rainforest</h2>
+<div class="dt-tags">
+<div class="dt-tag">Papers</div>
+</div>
+<p>Here, we experimentally evaluate how large mammalian herbivores affect the dominance, diversity and coexistence of these major tropical forest plant growth forms, by monitoring communities of saplings on the understorey in 43 paired exclusion plots in a long-term replicated exclusion experiment in the understorey of the Atlantic forest of Brazil.</p>
+</div>
+</a>
+<a href="posts/2021-01-14-book_defaunation/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Books"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 14, 2021</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-01-14-book_defaunation/book_defau.png"/>
+</div>
+<div class="description">
+<h2>Causes and consequences of large-scale defaunation in the Atlantic forest</h2>
+<div class="dt-tags">
+<div class="dt-tag">Books</div>
+</div>
+<p>In this chapter, we describe the causes and consequences of large-scale defaunation in the Atlantic Forest of South America. We identify and quantify the magnitude of the main anthropogenic drivers of defaunation and stimulate a debate on how to revert the loss of fauna to restore biodiversity and ecosystem functions and services.</p>
+</div>
+</a>
+<a href="posts/2019-06-10-paper_data_paper_mammals/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Papers"]}</script>
+<div class="metadata">
+<div class="publishedDate">June 10, 2019</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2019-06-10-paper_data_paper_mammals/data_paper_mamals.png"/>
+</div>
+<div class="description">
+<h2>ATLANTIC MAMMALS: a data set of assemblages of medium-and large-sized mammals of the Atlantic Forest of South America</h2>
+<div class="dt-tags">
+<div class="dt-tag">Papers</div>
+</div>
+<p>Here, we present the ATLANTIC MAMMALS, an open data set on information on medium- and large-sized mammal assemblages in the Atlantic Forest of Brazil, Paraguay, and Argentina. A total of 129 studies were compiled, including published and in press peer-reviewed papers, book chapters, theses and unpublished data.</p>
+</div>
+</a>
+<a href="posts/2018-06-28-paper_data_paper_amphibians/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Papers"]}</script>
+<div class="metadata">
+<div class="publishedDate">June 28, 2018</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2018-06-28-paper_data_paper_amphibians/amphibians.png"/>
+</div>
+<div class="description">
+<h2>ATLANTIC AMPHIBIANS: a data set of amphibian communities from the Atlantic Forests of South America</h2>
+<div class="dt-tags">
+<div class="dt-tag">Papers</div>
+</div>
+<p>Here we present a data set containing information about amphibian communities sampled throughout the Atlantic Forest Biome in South America. The data were extracted from 389 bibliographic references (articles, books, theses, and dissertations) representing inventories of amphibian communities from 1940 to 2017.</p>
+</div>
+</a>
+<a href="posts/2018-03-20-paper_pinnus_invasion/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Papers"]}</script>
+<div class="metadata">
+<div class="publishedDate">March 20, 2018</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img data-src="posts/2018-03-20-paper_pinnus_invasion/pinnus.png"/>
+</div>
+<div class="description">
+<h2>Temporal analysis of biological invasion by Pinus spp. in humid area of Cerrado domain</h2>
+<div class="dt-tags">
+<div class="dt-tag">Papers</div>
+</div>
+<p>Considering the importance of life history knowledge for the mitigation of exotic species, here we sought to investigate the history of invasion by Pinus in wetlands at the Ecological Station of Itirapina, SP, using near infrared reflectance (NIR) and the Normalized Difference Vegetation Index (NDVI) for the period 1985–2011.</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:Articles">Articles</a>
+<span class="category-count">(6)</span>
+</li>
+<li>
+<a href="#category:Books">Books</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Papers">Papers</a>
+<span class="category-count">(5)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>About my research</h1>
+<h1>Publications</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Work in progress</p></p>
+
 </div>
 
 
