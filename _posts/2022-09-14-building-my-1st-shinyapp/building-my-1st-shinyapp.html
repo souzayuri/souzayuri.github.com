@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["defau.jpg"]}
+  {"type":"character","attributes":{},"value":["building-my-1st-shinyapp_files/anchor-4.2.2/anchor.min.js","building-my-1st-shinyapp_files/bowser-1.9.3/bowser.min.js","building-my-1st-shinyapp_files/distill-2.2.21/template.v2.js","building-my-1st-shinyapp_files/header-attrs-2.14/header-attrs.js","building-my-1st-shinyapp_files/jquery-3.6.0/jquery-3.6.0.js","building-my-1st-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.js","building-my-1st-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.map","building-my-1st-shinyapp_files/popper-2.6.0/popper.min.js","building-my-1st-shinyapp_files/tippy-6.2.7/tippy-bundle.umd.min.js","building-my-1st-shinyapp_files/tippy-6.2.7/tippy-light-border.css","building-my-1st-shinyapp_files/tippy-6.2.7/tippy.css","building-my-1st-shinyapp_files/tippy-6.2.7/tippy.umd.min.js","building-my-1st-shinyapp_files/webcomponents-2.0.0/webcomponents.js","defau.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -189,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1261,15 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1468,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="building-my-1st-shinyapp_files/header-attrs-2.14/header-attrs.js"></script>
+  <script src="building-my-1st-shinyapp_files/header-attrs-2.16/header-attrs.js"></script>
   <script src="building-my-1st-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="building-my-1st-shinyapp_files/popper-2.6.0/popper.min.js"></script>
   <link href="building-my-1st-shinyapp_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1506,8 +1513,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">databases</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>This was my first experience building a ShinyApp. I created this
-app to host the dataset I used during my master’s.</p></p>
+<p><p>This was my first experience building a ShinyApp. I created this app to host the dataset I used during my master’s.</p></p>
 </div>
 
 <div class="d-byline">
@@ -1517,25 +1523,12 @@ app to host the dataset I used during my master’s.</p></p>
 </div>
 
 <div class="d-article">
-<p>During my master’s, I had the idea to make the data I used public and
-easily accessible to everyone. So, I found the <a
-href="https://shiny.rstudio.com/">ShinyApp</a> structure. Since I was
-already working and familiar with the R language, I thought it would be
-good to use its package to share my data.</p>
-<p>The idea was to create an interactive app with a website layout in
-which the user could see the details of the project as exploring the
-data information.</p>
-<p>The project tries to understand the impact of the vertebrates’
-Defaunation in the Brazilian Atlantic forest. That is why we called it
-<a
-href="https://souzayuri.shinyapps.io/biota/"><strong>BEFAU-Biota</strong></a>.
-Here the user can scroll through the app and check the information about
-the sampled areas, camera trap videos, fieldwork, and scientific
-publications, and interact with the data using a linear model.</p>
+<p>During my master’s, I had the idea to make the data I used public and easily accessible to everyone. So, I found the <a href="https://shiny.rstudio.com/">ShinyApp</a> structure. Since I was already working and familiar with the R language, I thought it would be good to use its package to share my data.</p>
+<p>The idea was to create an interactive app with a website layout in which the user could see the details of the project as exploring the data information.</p>
+<p>The project tries to understand the impact of the vertebrates’ Defaunation in the Brazilian Atlantic forest. That is why we called it <a href="https://souzayuri.shinyapps.io/biota/"><strong>DEFAU-Biota</strong></a>. Here the user can scroll through the app and check the information about the sampled areas, camera trap videos, fieldwork, and scientific publications, and interact with the data using a linear model.</p>
 <iframe src="https://souzayuri.shinyapps.io/biota/" style="border: 2px solid black; width: 120%; height: 500px;">
 </iframe>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

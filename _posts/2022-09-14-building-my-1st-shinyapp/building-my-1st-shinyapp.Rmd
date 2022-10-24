@@ -18,7 +18,7 @@ During my master's, I had the idea to make the data I used public and easily acc
 
 The idea was to create an interactive app with a website layout in which the user could see the details of the project as exploring the data information. 
 
-The project tries to understand the impact of the vertebrates' Defaunation in the Brazilian Atlantic forest. That is why we called it [**BEFAU-Biota**](https://souzayuri.shinyapps.io/biota/). Here the user can scroll through the app and check the information about the sampled areas, camera trap videos, fieldwork, and scientific publications, and interact with the data using a linear model.
+The project tries to understand the impact of the vertebrates' Defaunation in the Brazilian Atlantic forest. That is why we called it [**DEFAU-Biota**](https://souzayuri.shinyapps.io/biota/). Here the user can scroll through the app and check the information about the sampled areas, camera trap videos, fieldwork, and scientific publications, and interact with the data using a linear model.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
