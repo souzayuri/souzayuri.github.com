@@ -1,8 +1,8 @@
 ---
 title: "About me and my interests"
 anchor_sections: FALSE
-description: |
-  This website is a work in progress
+#description: |
+#  This website is a work in progress
 
 #author:
 #  - name: Yuri Silva de Souza
