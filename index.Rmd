@@ -1,6 +1,7 @@
 ---
 title: " "
 image: "data/images/YuriSSouza.jpg"
+#css: [bg_image.css]
 #links:
 #  - label: Researchgate
 #    url: "https://www.researchgate.net/profile/Yuri-Souza-6"

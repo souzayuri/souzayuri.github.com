@@ -59,7 +59,7 @@ var pJS = function(tag_id, params){
         random: true,
         anim: {
           enable: true,
-          speed: 3,
+          speed: 1,
           size_min: 1,
           sync: true
         }
@@ -73,7 +73,7 @@ var pJS = function(tag_id, params){
       },
       move: {
         enable: true,
-        speed: 0.5,
+        speed: 0.2,
         direction: 'none',
         random: true,
         straight: false,
