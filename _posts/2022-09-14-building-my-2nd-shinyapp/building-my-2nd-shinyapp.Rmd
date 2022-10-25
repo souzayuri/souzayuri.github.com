@@ -9,7 +9,7 @@ categories:
 author:
   - name: Yuri Souza
 date: 2022-09-24
-preview: crud.jpg
+preview: crud.gif
 output:
   distill::distill_article:
     self_contained: false

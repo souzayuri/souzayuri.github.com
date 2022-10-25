@@ -8,7 +8,7 @@ categories:
 author:
   - name: Yuri Souza
 date: 2022-09-24
-preview: defau.jpg
+preview: defau.gif
 output:
   distill::distill_article:
     self_contained: false

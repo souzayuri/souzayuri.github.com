@@ -8,7 +8,7 @@ categories:
 author:
   - name: Yuri Souza
 date: 2022-09-14
-preview: reseed.jpg
+preview: reseed.gif
 output:
   distill::distill_article:
     self_contained: false

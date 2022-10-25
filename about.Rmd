@@ -1,5 +1,6 @@
 ---
 title: "About me and my interests"
+css: [bg_image.css]
 anchor_sections: FALSE
 #description: |
 #  This website is a work in progress

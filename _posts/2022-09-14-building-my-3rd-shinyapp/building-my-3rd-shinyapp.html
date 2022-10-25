@@ -113,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Building my 3rd ShinyApp"]},{"type":"character","attributes":{},"value":["This was my third experience building a ShinyApp.\n"]},{"type":"character","attributes":{},"value":["ShinyApp","databases"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Yuri Souza"]}]}]},{"type":"character","attributes":{},"value":["2022-09-14"]},{"type":"character","attributes":{},"value":["reseed.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Building my 3rd ShinyApp"]},{"type":"character","attributes":{},"value":["This was my third experience building a ShinyApp.\n"]},{"type":"character","attributes":{},"value":["ShinyApp","databases"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Yuri Souza"]}]}]},{"type":"character","attributes":{},"value":["2022-09-14"]},{"type":"character","attributes":{},"value":["reseed.gif"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["reseed.jpg"]}
+  {"type":"character","attributes":{},"value":["building-my-3rd-shinyapp_files/anchor-4.2.2/anchor.min.js","building-my-3rd-shinyapp_files/bowser-1.9.3/bowser.min.js","building-my-3rd-shinyapp_files/distill-2.2.21/template.v2.js","building-my-3rd-shinyapp_files/header-attrs-2.14/header-attrs.js","building-my-3rd-shinyapp_files/header-attrs-2.16/header-attrs.js","building-my-3rd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.js","building-my-3rd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.js","building-my-3rd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.map","building-my-3rd-shinyapp_files/popper-2.6.0/popper.min.js","building-my-3rd-shinyapp_files/tippy-6.2.7/tippy-bundle.umd.min.js","building-my-3rd-shinyapp_files/tippy-6.2.7/tippy-light-border.css","building-my-3rd-shinyapp_files/tippy-6.2.7/tippy.css","building-my-3rd-shinyapp_files/tippy-6.2.7/tippy.umd.min.js","building-my-3rd-shinyapp_files/webcomponents-2.0.0/webcomponents.js","reseed.gif","reseed.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -189,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1261,15 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1468,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="building-my-3rd-shinyapp_files/header-attrs-2.14/header-attrs.js"></script>
+  <script src="building-my-3rd-shinyapp_files/header-attrs-2.16/header-attrs.js"></script>
   <script src="building-my-3rd-shinyapp_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="building-my-3rd-shinyapp_files/popper-2.6.0/popper.min.js"></script>
   <link href="building-my-3rd-shinyapp_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1518,8 +1525,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <iframe src="https://souzayuri.shinyapps.io/reseedproject/" style="border: 2px solid black; width: 170%; height: 500px;">
 </iframe>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
