@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 description: |
-  I am currently settled at The University of Miami.
+  I am currently settled at the University of Miami.
   
   Email: *yuri.souza@miami.edu* or *desouza.s.yuri@gmail.com*
 ---
