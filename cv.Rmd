@@ -11,7 +11,7 @@ library(fontawesome)
 
 `r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf) to access it on my `r fa("github", fill = "#244968")` -->
 
-<object data="D:/souzayuri.github.com/data/documents/cv-yuri-souza.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px"> 
+<object data="https://github.com/souzayuri/cv/blob/9e2f4df9ce67024efb3c584666a9b7332b6684c2/cv-yuri-souza.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px"> 
 </object>
 
 <!-- ### ###  `r fa("scroll", fill = "#397298")` [Academic](https://github.com/souzayuri/cv/raw/main/YuriSSouza_cv_10-16-2022.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
