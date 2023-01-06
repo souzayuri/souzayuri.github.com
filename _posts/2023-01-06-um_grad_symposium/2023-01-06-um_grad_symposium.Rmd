@@ -1,7 +1,7 @@
 ---
 title: "Murundus: hotspots of biodiversity, nutrient enrichment, and gas fluxes through termite activity"
 description: |
-  .....
+  This poster was presented on the University of Miami Graduate Student Symposium 2023
 categories:
   - Poster Presentation
 #  - 2022
@@ -16,6 +16,8 @@ output:
 
 
 ## **Abstract**
+I made this presentation for the University of Miami Graduate Student Symposium 2023.
+
 Campos de Murundus, or earthmounds, are discrete mounds surrounded by grass common throughout the Brazilian Savanna. Such sites favor colonization by plants and by termites¹, which play a significant role in ecosystem dynamics and maintenance through organic matter decomposition and gas fluxes. I aim to address how Campos de murundus drives ecosystem dynamics in a spatial gradient. For this, we will perform a literature review and data collection in the Brazilian Savanna Cerrado. We hypothesize the existence of a gradient of termite diversity, soil nutrient enrichment, plant functional composition, and gas fluxes increasing from an open grass field of the Savanna to the Murundus.
 
 
