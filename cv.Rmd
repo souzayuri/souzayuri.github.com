@@ -10,16 +10,16 @@ library(fontawesome)
 <embed src="data/documents/cv-yuri-souza.pdf" type="application/pdf" width="100%" height="600px" />
 
 
-###  `r fa("scroll", fill = "#244968")` [Professional](https://github.com/souzayuri/cv/raw/main/cv-yuri-souza.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
+###  `r fa("scroll", fill = "#244968")` [Professional CV](https://github.com/souzayuri/cv/raw/main/cv-yuri-souza.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
 
 `r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf) to access it on my `r fa("github", fill = "#244968")` 
+.
+.
+.
 
-.        
-.        
-.           
-.  
+<embed src="data/documents/YuriSSouza_cv_10-16-2022.pdf" type="application/pdf" width="100%" height="600px" />
 
-###  `r fa("scroll", fill = "#397298")` [Academic](https://github.com/souzayuri/cv/raw/main/YuriSSouza_cv_10-16-2022.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
+###  `r fa("scroll", fill = "#397298")` [Academic CV](https://github.com/souzayuri/cv/raw/main/YuriSSouza_cv_10-16-2022.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
 
 `r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/YuriSSouza_cv_10-16-2022.pdf) to access it on my `r fa("github", fill = "#244968")` 
 
