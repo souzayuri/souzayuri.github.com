@@ -7,9 +7,9 @@ knitr::opts_chunk$set(echo = FALSE)
 library(fontawesome)
 ```
 
-###  `r fa("scroll", fill = "#244968")` [Professional](https://github.com/souzayuri/cv/raw/main/cv-yuri-souza.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
+<!-- ### ###  `r fa("scroll", fill = "#244968")` [Professional](https://github.com/souzayuri/cv/raw/main/cv-yuri-souza.pdf) (Click to download the `r fa("file-pdf", fill = "red")`)
 
-`r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf) to access it on my `r fa("github", fill = "#244968")` 
+`r fa("link")` Or click [here](https://github.com/souzayuri/cv/blob/main/cv-yuri-souza.pdf) to access it on my `r fa("github", fill = "#244968")`  --> 
 
 <embed src="D:/souzayuri.github.com/data/documents/cv-yuri-souza.pdf" width="100%" height="600px" />
 
