@@ -1,0 +1,41 @@
+---
+title: "Murundus: hotspots of biodiversity, nutrient enrichment, and gas fluxes through termite activity"
+description: |
+  .....
+categories:
+  - Poster Presentation
+#  - 2022
+date: 01-06-2023
+preview: conceptual_model9.png
+output:
+  distill::distill_article:
+    self_contained: true
+
+---
+**authors:** *Yuri Souza & Amy Zanne*
+
+
+## **Abstract**
+
+................
+
+Check below the details of our poster:
+
+<embed src="Yuri_Souza_PSI_poster.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="50%" height="600px" />
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- adding share buttons on the right side of the page -->
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="right:0px; top:150px; data-a2a-url="https://souzayuri.github.io/" data-a2a-title="Yuri Souza">
+<a class="a2a_button_twitter"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->

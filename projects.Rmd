@@ -2,6 +2,9 @@
 title: "About my projects"
 description: |
   Work in progress
+listing:
+  posts:
+    - 2023-01-06-um_grad_symposium
 ---
 
 ```{r setup, include=FALSE}
