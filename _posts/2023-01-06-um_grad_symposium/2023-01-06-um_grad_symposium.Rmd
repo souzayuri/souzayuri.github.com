@@ -23,7 +23,9 @@ Campos de Murundus, or earthmounds, are discrete mounds surrounded by grass comm
 
 Unfortunately, our poster size is too heavy, so it was impossible to load with a high resolution on this post. Please click [here](https://github.com/souzayuri/betterposter_um_grad_symp_2023/blob/main/Yuri_Souza_PSI_poster.pdf) to access it from my GitHub and check the details of our research.
 
-<embed src="Yuri_Souza_PSI_poster_resized.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+<embed src="Yuri_Souza_PSI_poster_resized.pdf" type="application/pdf" width="100%" height="600px" />
+
+<!--<embed src="Yuri_Souza_PSI_poster_resized.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
 
 <!-- adding share buttons on the right side of the page -->
 <!-- AddToAny BEGIN -->
