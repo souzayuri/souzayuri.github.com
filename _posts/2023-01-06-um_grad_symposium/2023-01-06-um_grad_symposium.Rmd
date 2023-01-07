@@ -21,14 +21,14 @@ I made this presentation for the University of Miami Graduate Student Symposium 
 Campos de Murundus, or earthmounds, are discrete mounds surrounded by grass common throughout the Brazilian Savanna. Such sites favor colonization by plants and by termites¹, which play a significant role in ecosystem dynamics and maintenance through organic matter decomposition and gas fluxes. I aim to address how Campos de murundus drives ecosystem dynamics in a spatial gradient. For this, we will perform a literature review and data collection in the Brazilian Savanna Cerrado. We hypothesize the existence of a gradient of termite diversity, soil nutrient enrichment, plant functional composition, and gas fluxes increasing from an open grass field of the Savanna to the Murundus.
 
 
-Unfortunately, our poster size is too heavy, so it was impossible to load it on this webpage. Please click [here](https://github.com/souzayuri/betterposter_um_grad_symp_2023/blob/main/Yuri_Souza_PSI_poster.pdf) to access it from my GitHub and check the details of our research.
+Unfortunately, our poster size is too heavy, so it was impossible to load with a high resolution on this post. Please click [here](https://github.com/souzayuri/betterposter_um_grad_symp_2023/blob/main/Yuri_Souza_PSI_poster.pdf) to access it from my GitHub and check the details of our research.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+<embed src="Yuri_Souza_PSI_poster_resized.pdf" type="application/pdf" width="100%" height="600px" />
 
+<!-- <embed src="SOUZA_POSTER.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
 <!-- adding share buttons on the right side of the page -->
 <!-- AddToAny BEGIN -->
+
 <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="right:0px; top:150px; data-a2a-url="https://souzayuri.github.io/" data-a2a-title="Yuri Souza">
 <a class="a2a_button_twitter"></a>
 </div>
