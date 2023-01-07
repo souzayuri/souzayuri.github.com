@@ -25,7 +25,8 @@ Unfortunately, our poster size is too heavy, so it was impossible to load with a
 
 <embed src="Yuri_Souza_PSI_poster_resized.pdf" type="application/pdf" width="100%" height="600px" />
 
-<!-- <embed src="SOUZA_POSTER.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+<embed src="Yuri_Souza_PSI_poster_resized.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+
 <!-- adding share buttons on the right side of the page -->
 <!-- AddToAny BEGIN -->
 
